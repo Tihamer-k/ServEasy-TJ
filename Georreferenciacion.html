@@ -12,6 +12,7 @@
 
     <!-- Bootstrap -->
     <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="contenido.css" rel="styleshee">
     <!-- Font Awesome -->
     <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- NProgress -->
@@ -69,29 +70,29 @@
                   </li>
                   <li><a><i class="fa fa-edit"></i> Cotizaciones   <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="form.html">Cotizaciones pendientes </a></li>
-                      <li><a href="form_advanced.html">Cotizaciones completadas</a></li>
+                      <li><a href="cotizaciones.html">Cotizaciones pendientes </a></li>
+                      <li><a href="cotizaciones.html">Cotizaciones completadas</a></li>
                     </ul>
                   </li>
                   <li><a><i class="fa fa-users" aria-hidden="true"></i>  Clientes  <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="general_elements.html">Clientes existentes </a></li>
-                      <li><a href="media_gallery.html">registrar clientes </a></li>
+                      <li><a href="clientes.html">Clientes existentes </a></li>
+                      <li><a href="clientes.html">registrar clientes </a></li>
                     </ul>
                   </li>
                   <li><a><i class="fa fa-cart-plus" aria-hidden="true"></i> Productos <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="chartjs.html"></a></li>
-                      <li><a href="chartjs2.html">Chart JS2</a></li>
-                      <li><a href="morisjs.html">Moris JS</a></li>
-                      <li><a href="echarts.html">ECharts</a></li>
-                      <li><a href="other_charts.html">Other Charts</a></li>
+                      <li><a href="productos.html"></a></li>
+                      <li><a href="productos.html">Modificar productos</a></li>
+                      <li><a href="productos.html">Eliminar productos</a></li>
+                      <li><a href="productos.html">Agregar productos</a></li>
+                      <li><a href="productos.html">Crear ordenes de compra</a></li>
                     </ul>
                   </li>
                   <li><a><i class="fa fa-clone"></i> Ordenes de pedido <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
-                      <li><a href="fixed_sidebar.html">Ordenes pendientes </a></li>
-                      <li><a href="fixed_footer.html">Enviar ordenes a logistica</a></li>
+                      <li><a href="ordenes de pedido.html">Ordenes pendientes </a></li>
+                      <li><a href="ordenes de pedido.html">Enviar ordenes a logistica</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -130,7 +131,7 @@
                   <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item"  href="javascript:;"> Profile</a>
                       <a class="dropdown-item"  href="javascript:;">
-                        <span class="badge bg-red pull-right">50%</span>
+                        
                         <span>Settings</span>
                       </a>
                   <a class="dropdown-item"  href="javascript:;">Help</a>
@@ -214,28 +215,66 @@
           <div class="row" style="display: inline-block;" >
           <div class="tile_count">
             
-            <div class="col-md-2 col-sm-4  tile_stats_count">
-              
-            </div>
-            <div class="col-md-2 col-sm-4  tile_stats_count">
-              
-            </div>
-            <div class="col-md-2 col-sm-4  tile_stats_count">
-              
-            </div>
-            <div class="col-md-2 col-sm-4  tile_stats_count">
-              
-            </div>
-            <div class="col-md-2 col-sm-4  tile_stats_count">
-             
-            </div>
           </div>
         </div>
           <!-- /top tiles -->
 
           <div class="row">
             <div class="col-md-12 col-sm-12 ">
-              
+              <div class="dashboard_graph">
+
+                <div class="row x_title">
+                  <div class="col-md-6">
+                    <h3> Ubicar clientes</h3>
+                  </div>
+                  <div class="col-md-6">
+                    
+                  </div>
+                </div>
+
+                <div class="col-md-9 col-sm-9 ">
+                  <div ><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.39280893392!2d-74.24789356439048!3d4.648625937015389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoQ!5e0!3m2!1ses!2sco!4v1601410450861!5m2!1ses!2sco" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+                </div>
+                <div class="col-md-3 col-sm-3  bg-white">
+                  <div class="x_title">
+                    <h2>Localidades mas frecuentes </h2>
+                    <div class="clearfix"></div>
+                  </div>
+
+                  <div class="col-md-12 col-sm-12 ">
+                    <div>
+                      <p>Bosa</p>
+                      <div class="">
+                        
+                      </div>
+                    </div>
+                    <div>
+                      <p>Usaquen </p>
+                      <div class="">
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 col-sm-12 ">
+                    <div>
+                      <p>Santa Fe</p>
+                      <div class="">
+                        
+                      </div>
+                    </div>
+                    <div>
+                      <p>Tunjuelito</p>
+                      <div class="">
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="clearfix"></div>
+              </div>
+            </div>
 
           </div>
           <br />
@@ -245,90 +284,52 @@
 
             <div class="col-md-4 col-sm-4 ">
              
+            </div>
 
             <div class="col-md-4 col-sm-4 ">
               
+            </div>
 
 
             <div class="col-md-4 col-sm-4 ">
               
+            </div>
 
           </div>
 
 
           <div class="row">
-            
+            <div class="col-md-4 col-sm-4 ">
+              
+            </div>
 
 
-            <div class="col-md-20 col-sm-20 ">
+            <div class="col-md-8 col-sm-8 ">
 
 
 
-              <div class="row col-md-12 col-sm-12">
+              <div class="row">
 
-                <div class="col-md-150 col-sm-150 ">
-                  <div class="x_panel">
-                    <div class="x_title">
-                      <h2>Georreferenciar clientes </h2>
-                      <ul class="nav navbar-right panel_toolbox">
-                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                        </li>
-                        <li class="dropdown">
-                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" href="#">Settings 1</a>
-                              <a class="dropdown-item" href="#">Settings 2</a>
-                            </div>
-                        </li>
-                        <li><a class="close-link"><i class="fa fa-close"></i></a>
-                        </li>
-                      </ul>
-                      <div class="clearfix"></div>
-                    </div>
-                    <div class="x_content">
-                      <div class="dashboard-widget-content">
-                        <div class="col-md-4 hidden-small">
-                          <h2 class="line_30">Clientes ubicados en las 20 localidades de bogota</h2>
-
-                          <table class="countries_list">
-                            <tbody>
-                              <tr>
-                                <td>Bosa</td>
-                                <td class="fs15 fw700 text-right">48%</td>
-                              </tr>
-                              <tr>
-                                <td>Usaquen</td>
-                                <td class="fs15 fw700 text-right">17%</td>
-                              </tr>
-                              <tr>
-                                <td>Chapinero</td>
-                                <td class="fs15 fw700 text-right">11%</td>
-                              </tr>
-                              <tr>
-                                <td>Santa Fe</td>
-                                <td class="fs15 fw700 text-right">9%</td>
-                              </tr>
-                              <tr>
-                                <td>Usme</td>
-                                <td class="fs15 fw700 text-right">5%</td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                        <div id="world-map-gdp" class="col-md-8 col-sm-12 " style="height:230px;"></div>
-                      </div>
-                    </div>
-                  </div>
+                <div class="col-md-12 col-sm-12 ">
+                  
                 </div>
 
               </div>
               <div class="row">
 
 
+                <!-- Start to do list -->
+                <div class="col-md-6 col-sm-6 ">
+                  
+                </div>
+                <!-- End to do list -->
                 
-                
-                
-                
+                <!-- start of weather widget -->
+                <div class="col-md-6 col-sm-6 ">
+                  
+
+                </div>
+                <!-- end of weather widget -->
               </div>
             </div>
           </div>
