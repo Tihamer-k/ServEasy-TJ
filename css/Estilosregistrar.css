@@ -1,0 +1,152 @@
+*{    
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background:url(../img/Usuario.jpg);
+    background-attachment: relative;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+}
+.contenedor-form {
+    position: relative;
+    background-color: rgb(20, 20, 20);
+    width: 100%;
+    max-width: 500px;
+    margin: 5px auto;
+    color: rgb(241, 241, 241);
+    border-radius: 5px;
+    padding: 15px 20px;
+}
+
+.contenedor-form .Formulario h2{
+    position: center;
+    width: 100%;
+}
+/*ACÁ VA LA PARTE DE REGISTRO DE USUARIO*/
+/*ACÁ VA LA PARTE DE REGISTRO DE USUARIO*/
+/*ACÁ VA LA PARTE DE REGISTRO DE USUARIO*/
+/*ACÁ VA LA PARTE DE REGISTRO DE USUARIO*/
+/*ACÁ VA LA PARTE DE REGISTRO DE USUARIO*/
+.contenedor-form .toggle{
+  
+
+    position: absolute;
+    top: 1px;  
+    right: 1px;
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+    /*border-top: 2px solid #EB8E11;
+    border-bottom   : 2px solid #EB8E11;
+    transition: all .5s ease;
+    cursor: pointer;*/
+}
+/*
+.contenedor-form .toggle span {
+    letter-spacing: 1px;
+    
+}
+.contenedor-form .toggle:hover{
+    border-top: 2px solid #42FF00;
+    border-bottom   : 2px solid #42FF00;
+}
+*/
+.contenedor-form h2{
+    margin: 0 0 18px 0;
+    font-size: 20px;
+    font-weight:400 ;
+    line-height: 1;
+}
+.contenedor-form a{
+    margin: 0 1px 1px 0;
+}
+.contenedor-form input[type="text"],
+.contenedor-form input[type="password"],
+.contenedor-form input[type="E-mail"],
+.contenedor-form input[type="Dirección"],
+.contenedor-form input[type="Barrio"],
+.contenedor-form input[type="Cargo empresarial"]{
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    background: rgba(0, 0, 0, 0.11);
+    color: aliceblue;
+    border: none;
+    border-radius: 2px;
+    border-bottom: 4px solid #EB8E11;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: normal;
+    margin: 0 0 17px 0;
+    transition: all .5s ease;
+}
+
+.contenedor-form input[type="text"]:focus,
+.contenedor-form input[type="password"]:focus,
+.contenedor-form input[type="E-mail"]:focus,
+.contenedor-form input[type="Dirección"]:focus,
+.contenedor-form input[type="Barrio"]:focus,
+.contenedor-form input[type="Cargo empresarial"]:focus{
+    border-bottom: 4px solid#0BC25E;
+   
+}
+.contenedor-form select{
+    outline: none;
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    background: rgba(20,20,20);
+    color:#fff ;
+    border: none;
+    border-radius: 2px;
+    border-bottom: 4px solid #EB8E11;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: normal;
+    margin: 0 0 17px 0;
+    transition: all .5s ease;
+}
+
+.contenedor-form input[type="submit"]{
+    background: #EB8E11 ;
+    color:#000000 ;
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    font-weight: normal;
+    font-family: Roboto;   
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.contenedor-form input[type="submit"]:hover{
+    background: rgba(2, 224, 76, 0.7)
+}
+
+/*.contenedor-form .reset-password{
+    background: rgba(2, 224, 76, 0.7);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+.contenedor-form .reset-password a{
+    color: black;
+    font-family: Roboto;
+    font-size: 15px;
+    text-decoration:none;
+
+}
+*/
