@@ -82,6 +82,7 @@
                   </li>
                   <li><a><i class="fa fa-cart-plus" aria-hidden="true"></i> Productos <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
+                      
                       <li><a href="productos.html">Modificar productos</a></li>
                       <li><a href="productos.html">Eliminar productos</a></li>
                       <li><a href="productos.html">Agregar productos</a></li>
@@ -224,61 +225,96 @@
 
                 <div class="row x_title">
                   <div class="col-md-6">
-                    <h3> Productos mas vendidos en los ultimos meses</h3>
+                    <h3> Ordenes de compra</h3>
                   </div>
                   <div class="col-md-6">
-                    <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
-                      <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
-                      <span>December 30, 2014 - January 28, 2015</span> <b class="caret"></b>
-                    </div>
+                    
                   </div>
                 </div>
 
                 <div class="col-md-9 col-sm-9 ">
-                  <div id="chart_plot_01" class="demo-placeholder"></div>
+                  <div ><table class="table table-responsive">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th scope="col">Ordenes pendientes</th>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre cliente </th>
+                        <th scope="col">Telefono </th>
+                        <th scope="col">Pedido</th>
+                        <th scope="col">cantidad</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th></th>
+                        <td scope="row">649578</td>
+                        <td>Miguel Vega</td>
+                        <td>3005649457</td>
+                        <td>Cocacola </br> Sprite </br> Quatro </br> Pepsi</td>
+                        <td>2 pacas</br>1 paca</br>3 pacas</br>1 paca</td>
+                      </tr>
+                      <tr>
+                        <th></th>
+                        <td scope="row">468513</td>
+                        <td>Tihamer Aldana</td>
+                        <td>3156497584</td>
+                        <td>Colombiana</br>Big cola </br>Del valle mandarina</td>
+                        <td> 2 pacas </br> 1 paca </br> 5 pacas</td>
+                      </tr>
+                      <tr>
+                        <th></th>
+                        <td scope="row">642579</td>
+                        <td>Juan Gonzales</td>
+                        <td>30164257</td>
+                        <td>Pony malta </br>Cifrut de mora</td>
+                        <td>7 unidades</br>1 paca</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+                  <table class="table table-responsive">
+                    <thead class="thead-light" >
+                      <tr>
+                        <th scope="col">Ordenes completadas </th>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre cliente </th>
+                        <th scope="col">Telefono </th>
+                        <th scope="col">Pedido</th>
+                        <th scope="col">cantidad</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th></th>
+                        <td scope="row">031645</td>
+                        <td>Deyvid Prada </td>
+                        <td>3224651389</td>
+                        <td>Hit de caja </br>Postobon de uva </br>Canada Dry</td>
+                        <td>15 unidades </br>  2 pacas </br>4 pacas </td>
+                      </tr>
+                      <tr>
+                        <th></th>
+                        <td scope="row">431625</td>
+                        <td>Pedro Alcazar</td>
+                        <td>3016425987</td>
+                        <td>Agua cielo</br>Cocacola en litro</td>
+                        <td>17 unidades</br>4 pacas</td>
+                      </tr>
+                      <tr>
+                        <th></th>
+                        <td scope="row">431265</td>
+                        <td>Antonieta De Las Nieves</td>
+                        <td>3054621693</td>
+                        <td>Bidon de agua brisa</br>Pony malta</td>
+                        <td>5 unidades </br>3 pacas</td>
+                      </tr>
+                    </tbody>
+                  </table></div>
+                  <button type="button" class="btn btn-outline-dark"> <i class="fa fa-paper-plane-o" aria-hidden="true"></i> Enviar a logistica</button>
                 </div>
                 <div class="col-md-3 col-sm-3  bg-white">
-                  <div class="x_title">
-                    <h2>Top </h2>
-                    <div class="clearfix"></div>
-                  </div>
-
-                  <div class="col-md-12 col-sm-12 ">
-                    <div>
-                      <p>Cocacola</p>
-                      <div class="">
-                        <div class="progress progress_sm" style="width: 76%;">
-                          <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="80"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <p>Pepsi </p>
-                      <div class="">
-                        <div class="progress progress_sm" style="width: 76%;">
-                          <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="60"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-12 col-sm-12 ">
-                    <div>
-                      <p>Colombiana</p>
-                      <div class="">
-                        <div class="progress progress_sm" style="width: 76%;">
-                          <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="40"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div>
-                      <p>H2O</p>
-                      <div class="">
-                        <div class="progress progress_sm" style="width: 76%;">
-                          <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="50"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                 
+                  
 
                 </div>
 
