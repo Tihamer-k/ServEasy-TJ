@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <link rel="stylesheet" href="css/Estilosregistrar.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../MenúDesplegable/css1/fontawesome.min.css">
+</head>
+<body>
+    <div class="contenedor-form">
+        <div class="toggle">
+               <!-- <a href="C:\Users\sanys\OneDrive\PROYECTO ADSI\Fase 3\Diseño Web III\Módulo Administrativo\Iniciarsesión.html"> 
+                   <Span>Iniciar sesión</Span></a>-->
+    </div>  
+<div class="contenedor-form">
+<div class="Formulario">
+    <h2>Crea tu cuenta para: Domiciliario</h2>
+    <form action="#">
+        <input type="text" id="user" placeholder="Usuario" required>
+        <input type="text" id="usertype" placeholder="Tipo de Usuario" required>
+        <input type="password" id="contra" placeholder="Escriba su contraseña" required>
+        <input type="password" id="contra1" placeholder="Esriba de nuevo su contraseña" required>
+        <input type="text" id="correo" placeholder= "E-mail" required/>
+        <input type="text" id="direc" placeholder="Dirección" required>
+        <input type="text" id="barr" placeholder="Barrio" required>
+        <input type="text" id="cargo" placeholder="Cargo empresarial" required>
+        <input type="submit" id="crear" value="Crear usuario">
+    </form>
+    
+</div>
+    </div> 
+    </div>
+    <script>
+        var usuario = document.getElementById('user');
+        var tipodeusurio = document.getElementById('tdu');
+        var cliente = document.getElementById('cliente');
+        var administrador = document.getElementById('admin');
+        var logistica = document.getElementById('logistica');
+        var domiciliario = document.getElementById('domiciliario');
+        var contraseña = document.getElementById('contra');
+        var contraseña1 = document.getElementById('contra1');
+        var correo = document.getElementById('correo');
+
+        if (usuario = null || usuario == ''){
+            alert ('Dígite su nombre');
+        }
+        if (tipodeusurio == cliente ){
+            location.href='';
+        }
+    </script>
+</body>
+</html>
