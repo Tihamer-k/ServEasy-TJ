@@ -37,7 +37,7 @@
       <div class="col-md-3 left_col">
         <div class="left_col scroll-view">
           <div class="navbar nav_title">
-            <a href="index.html" class="site_title"> <span>
+            <a href="index4.html" class="site_title"> <span>
                 <h2 class="logoColor2"> (</h1>
                   <h2 class="logoColor">Serv</h2>
                   <h2 class="logoColor2">Easy.TJ)</h2>
@@ -66,22 +66,17 @@
             <div class="menu_section">
               <h3>Usuario Domiciliario</h3>
               <ul class="nav side-menu">
-                <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
+                <li><a><i class="fa fa-home "></i> Home <span class="fa fa-chevron-down"></span> </a>
+                  
                   <ul class="nav child_menu">
                     <li><a href="">Sincronizar Datos</a></li>
-                    <li><a href="">Recaudos Totales</a></li>
-                    <li><a href="">Recibos Totales</a></li>
+
                     <li><a href="">Sincronizar fin ruta</a></li>
                   </ul>
                 </li>
-                <br />
-                <h3>Ruta de Entrega</h3>
-                <li><a><i class="fa fa-file-text"></i> Recibos <span class="fa fa-chevron-down"></span></a>
-                  <ul class="nav child_menu">
-                    <li><a href="form.html">Por Entregar</a></li>
-                    <li><a href="form_advanced.html">Entregados</a></li>
-                    <li><a href="form_validation.html">No Entregados</a></li>
-                  </ul>
+                
+                <li><a href="recibosEntregar.html"><i class="fa fa-file-text"></i> Recibos </a>
+                  
                 </li>
                 <li><a href="calendar.html"><i class="fa fa-calendar"></i> Calendario </a>
                 </li>
@@ -122,7 +117,6 @@
                 <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
                   <a class="dropdown-item" href="javascript:;"> Profile</a>
                   <a class="dropdown-item" href="javascript:;">
-                    <span class="badge bg-red pull-right">50%</span>
                     <span>Settings</span>
                   </a>
                   <a class="dropdown-item" href="javascript:;">Help</a>
@@ -206,38 +200,33 @@
         <div class="row">
           <div class="col-md-12 col-sm-12 ">
             <div class="col-md-6 col-sm-6 ">
-              <div class="x_panel tile fixed_height_320 overflow_hidden">
+              <div class="x_panel">
                 <div class="x_title">
                   <h2>Gestión de Entregas</h2>
-                  <ul class="nav navbar-right panel_toolbox">
-                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                    </li>
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                   
-                  </ul>
+                 
                   <div class="clearfix"></div>
                 </div>
                 <div class="x_content">
-                  <table class="" style="width:100%">
+                  <table class="" >
                     <tr>
-                      <th style="width:37%;">
-                        <p>Grafica</p>
-                      </th>
+                      
                       <th>
-                        <div class="col-lg-7 col-md-7 col-sm-7 ">
+                        <div class="col-lg-12 col-md-12 col-sm-12 ">
+                          <p class="">Revisa constantemente tu progreso de Entregas aqui.</p>
+                          
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-9 ">
                           <p class="">Estados</p>
                         </div>
-                        <div class="col-lg-5 col-md-5 col-sm-5 ">
+                        <div class="col-lg-3 col-md-3 col-sm-3 ">
                           <p class="">Progreso</p>
                         </div>
+                       
+                        
                       </th>
-                    </tr>
+                      
                     <tr>
-                      <td>
-                        <canvas class="canvasDoughnut" height="140" width="140" style="margin: 15px 10px 10px 0"></canvas>
-                      </td>
+                      
                       <td>
                         <table class="tile_info">
                           <tr>
@@ -246,6 +235,7 @@
                             </td>
                             <td>30%</td>
                           </tr>
+                         
                           <tr>
                             <td>
                               <p><i class="fa fa-square green"></i>No Entregados </p>
@@ -258,6 +248,22 @@
                             </td>
                             <td>20%</td>
                           </tr>
+                          <tr>
+                            <td>
+                              <p><i class="fa fa-square red"></i>Recaudos Realizados</p>
+                            </td>
+                            <td>30%</td>
+                            <br/>
+                          </tr>
+                          
+                          
+                          
+                          <tr>
+                            <td>
+                              <canvas class="canvasDoughnut" height="240" width="240" ></canvas>
+                            </td>
+                          </tr>
+                          
                         </table>
                       </td>
                     </tr>
@@ -270,14 +276,7 @@
               <div class="x_panel">
                 <div class="x_title">
                   <h2>Tareas del Día </h2>
-                  <ul class="nav navbar-right panel_toolbox">
-                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                    </li>
-                    <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i
-                          class="fa fa-wrench"></i></a>
-                    </li>
-                  </ul>
+                  
                   <div class="clearfix"></div>
                 </div>
                 <div class="x_content">
@@ -317,7 +316,22 @@
                       </li>
                       <li>
                         <p>
-                          <input type="checkbox" class="flat"> Sincronizar datos para finalizar ruta.</p>
+                          <input type="checkbox" class="flat"> Entregar recaudos.</p>
+                      </li>
+                      <li>
+
+                        <p>
+                          <input type="checkbox" class="flat"> Informar si hay reenvios.</p>
+                      </li>
+                      <li>
+
+                        <p>
+                          <input type="checkbox" class="flat"> Revisar si hay averias.</p>
+                      </li>
+                      
+                      <li>
+                        <p>
+                          <input type="checkbox" class="flat"> Marque este antes de sincronizar datos para finalizar ruta, gracias por su labor hoy.</p>
                       </li>
 
                     </ul>
@@ -326,6 +340,7 @@
               </div>
             </div>
             <!-- End to do list -->
+            
 
 
 
@@ -357,7 +372,7 @@
   <!-- NProgress -->
   <script src="vendors/nprogress/nprogress.js"></script>
   <!-- Chart.js -->
-  <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
+  <script src="vendors/Chart.js/dist/Chart.min.js"></script>
   <!-- gauge.js -->
   <script src="vendors/gauge.js/dist/gauge.min.js"></script>
   <!-- bootstrap-progressbar -->
