@@ -925,6 +925,10 @@
   .profile_pic {
     width: 40%;
   }
+  .ajustarRecibo{
+    height: 500px;
+    width: auto;
+  }
   .img-circle.profile_img {
     width: 230%;
     padding-left: 15%;
