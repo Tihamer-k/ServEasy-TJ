@@ -81,26 +81,17 @@
                 <li><a><i class="fa fa-edit"></i> Prioridades <span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
                     <li><a href="form.html">Órdenes</a></li>
-                    <li><a href="form_advanced.html">Notificaciones</a></li>
                     <li><a href="form_validation.html">Validaciones</a></li>
                     <li><a href="form_wizards.html">Autorizaciones</a></li>
                   </ul>
                 </li>
                 <li><a><i class="fa fa-desktop"></i>Módulos<span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
-                    <li><a href="general_elements.html">Logístico</a></li>
-                    <li><a href="media_gallery.html">Distributivo</a></li>
                     <li><a href="inbox.html">Mensajes sin leer</a></li>
                     <li><a href="Calendario.html">Calendario</a></li>
                   </ul>
                 </li>
-                <li><a><i class="fa fa-table"></i> Tablas <span class="fa fa-chevron-down"></span></a>
-                  <ul class="nav child_menu">
-                    <li><a href="tables.html">Tables</a></li>
-                    <li><a href="tables_dynamic.html">Table Dinamica</a></li>
-                  </ul>
-                </li>
-                <li><a><i class="fa fa-bar-chart-o"></i>Estadisticas<span class="fa fa-chevron-down"></span></a>
+                <!--<li><a><i class="fa fa-bar-chart-o"></i>Estadisticas<span class="fa fa-chevron-down"></span></a>
                   <ul class="nav child_menu">
                     <li><a href="chartjs.html">Chart JS</a></li>
                     <li><a href="chartjs2.html">Chart JS2</a></li>
@@ -112,7 +103,7 @@
                   <ul class="nav child_menu">
                     <li><a href="fixed_sidebar.html">Añadir</a></li>
                     <li><a href="fixed_footer.html">Eliminar</a></li>
-                  </ul>
+                  </ul>-->
                 </li>
               </ul>
             </div>
@@ -616,11 +607,67 @@
             Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
           </div>
           <div class="clearfix"></div>
+          <div class="row">
+
+          
         </footer>
         <!-- /footer content -->
       </div>
     </div>
-
+    <div class="right_col" role="main">
+      <div class="">
+        <div class="page-title">
+          <div class="title_left">
+            <h3>Calendario <small>Click para añadir evento/Modificar evento</small></h3>
+          </div>
+  
+          <div class="title_right">
+            <div class="col-md-5 col-sm-5   form-group pull-right top_search">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Buscar un...">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button">Buscar!</button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="clearfix"></div>
+  
+        <div class="row">
+          <div class="col-md-12">
+            <div class="x_panel">
+              <div class="x_title">
+                <h2>Eventos del Calendario <small>Sesiones</small></h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Config 1</a>
+                        <a class="dropdown-item" href="#">Config 2</a>
+                      </div>
+                  </li>
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+              <div class="x_content">
+  
+                <div id='calendar'></div>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="CalendarModalNew" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
+  <div id="CalendarModalEdit" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
     <!-- calendar modal -->
     <div id="CalenderModalNew" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
@@ -628,19 +675,19 @@
 
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            <h4 class="modal-title" id="myModalLabel">New Calendar Entry</h4>
+            <h4 class="modal-title" id="myModalLabel">Nuevo Calendario de Entrada</h4>
           </div>
           <div class="modal-body">
             <div id="testmodal" style="padding: 5px 20px;">
               <form id="antoform" class="form-horizontal calender" role="form">
                 <div class="form-group">
-                  <label class="col-sm-3 control-label">Title</label>
+                  <label class="col-sm-3 control-label">Titulo</label>
                   <div class="col-sm-9">
                     <input type="text" class="form-control" id="title" name="title">
                   </div>
                 </div>
                 <div class="form-group">
-                  <label class="col-sm-3 control-label">Description</label>
+                  <label class="col-sm-3 control-label">Descripción</label>
                   <div class="col-sm-9">
                     <textarea class="form-control" style="height:55px;" id="descr" name="descr"></textarea>
                   </div>
@@ -649,8 +696,8 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-default antoclose" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary antosubmit">Save changes</button>
+            <button type="button" class="btn btn-default antoclose" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary antosubmit">Guardar Cambios</button>
           </div>
         </div>
       </div>
@@ -661,20 +708,20 @@
 
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            <h4 class="modal-title" id="myModalLabel2">Edit Calendar Entry</h4>
+            <h4 class="modal-title" id="myModalLabel2">Editar Calendario de Entrada</h4>
           </div>
           <div class="modal-body">
 
             <div id="testmodal2" style="padding: 5px 20px;">
               <form id="antoform2" class="form-horizontal calender" role="form">
                 <div class="form-group">
-                  <label class="col-sm-3 control-label">Title</label>
+                  <label class="col-sm-3 control-label">Titulo</label>
                   <div class="col-sm-9">
                     <input type="text" class="form-control" id="title2" name="title2">
                   </div>
                 </div>
                 <div class="form-group">
-                  <label class="col-sm-3 control-label">Description</label>
+                  <label class="col-sm-3 control-label">Descripción</label>
                   <div class="col-sm-9">
                     <textarea class="form-control" style="height:55px;" id="descr2" name="descr"></textarea>
                   </div>
@@ -685,7 +732,7 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default antoclose2" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary antosubmit2">Save changes</button>
+            <button type="button" class="btn btn-primary antosubmit2">Guardar Cambios </button>
           </div>
         </div>
       </div>
@@ -694,7 +741,8 @@
     <div id="fc_create" data-toggle="modal" data-target="#CalenderModalNew"></div>
     <div id="fc_edit" data-toggle="modal" data-target="#CalenderModalEdit"></div>
     <!-- /calendar modal -->
-        
+    <div id="CalendarModalNew" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
+    <div id="CalendarModalEdit" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
     <!-- jQuery -->
     <script src="../vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
