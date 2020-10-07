@@ -1,118 +1,140 @@
 <!DOCTYPE html>
 <html lang="es-CO">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!-- Meta, title, CSS, favicons, etc. -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>ServEasy.TJ</title>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap -->
-    <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <!-- NProgress -->
-    <link href="vendors/nprogress/nprogress.css" rel="stylesheet">
-    <!-- Animate.css -->
-    <link href="vendors/animate.css/animate.min.css" rel="stylesheet">
+  <title>ServEasy.TJ</title>
+  <link rel="shortcut icon" href="#" /> 
+  <!-- Bootstrap -->
+  <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- NProgress -->
+  <link href="vendors/nprogress/nprogress.css" rel="stylesheet">
+  <!-- Animate.css -->
+  <link href="vendors/animate.css/animate.min.css" rel="stylesheet">
 
-    <!-- Custom Theme Style -->
-    <link href="build/css/custom.min.css" rel="stylesheet">
-  </head>
+  <!-- Custom Theme Style -->
+  <link href="build/css/custom.min.css" rel="stylesheet">
+  <!--las alertas-->
+  
+  <link rel="stylesheet" href="build/css/sweetalert2.min.css">
+</head>
 
-  <body class="login">
-    <div>
-      <a class="hiddenanchor" id="signup"></a>
-      <a class="hiddenanchor" id="signin"></a>
+<body class="login">
+  <div>
+    <a class="hiddenanchor" id="signup"></a>
+    <a class="hiddenanchor" id="signin"></a>
+    
+
+
+    <div class="login_wrapper">
+      <div class="animate form login_form">
+        <section class="login_content caja">
+          <form action="" method="post" >
+            <h1>Ingreso Empresa</h1>
+            <div>
+              <select class="opciones">
+                <option value="">Empresa</option>
+                <option value="Distribuidora el Sol">Distribuidora el Sol</option>
+              </select>
+              <br>
+            </div>
+            <div>
+              <input type="text" class="form-control usuario" placeholder="Usuario"  />
+            </div>
+            <div>
+              <input type="password" class="form-control contraseña1" placeholder="Contraseña" />
+            </div>
+            <div>
+              <a class="iniciar" >Log in</a>
+              <a id="olvidoPassword" style="cursor:pointer;">¿Olvidaste la Contraseña?</a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="separator">
+              <p class="change_link">¿Nuevo en el sitio?
+                <a href="#signup" class="to_register"> Crea una cuenta </a>
+              </p>
+
+              <div class="clearfix"></div>
+              <br />
+
+              <div>
+                <h1 class="logoColor2">(</h1>
+                <h1 class="logoColor">Serv</h1>
+                <h1 class="logoColor2">Easy.TJ)</h1>
+                <h1></h1>
+                <p>©2020 All Rights Reserved. </p>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+
+      <div id="register" class="animate form registration_form">
+        <section class="login_content caja">
+          <form  action="" method="post" onclick="return validarfor();">
+            <h1>Crea una Cuenta</h1>
+            <div>
+              <input type="text" class="form-control nombre" placeholder="Nombre Empresa" id="nombreEmpresa" />
+            </div>
+            <div>
+              <input type="text" class="form-control" placeholder="Razon Social"  id="rznSocial"/>
+            </div>
+            <div>
+              <input type="number" class="form-control" placeholder="NIT/RUT"  id=""/>
+              <br>
+            </div>
+            <div>
+              <input type="email" class="form-control" placeholder="Email"  id=""/>
+            </div>
+            <div>
+              <input type="password" class="form-control" placeholder="Contraseña"  id=""/>
+            </div>
+            <div>
+              <button id="Enviar" class="btn btn-success accion" >Enviar</button>
+
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="separator">
+              <p class="change_link">¿Ya eres miembro?
+                <a href="#signin" class="to_register"> Log in </a>
+              </p>
+              <div class="clearfix"></div>
+              <br />
+
+              <div>
+                <!--Logo un poco guache, ala.-->
+                <h1 class="logoColor2">(</h1>
+                <h1 class="logoColor">Serv</h1>
+                <h1 class="logoColor2">Easy.TJ)</h1>
+                <h1></h1>
+                <p>©2020 All Rights Reserved. </p>
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
+
       
 
-      <div class="login_wrapper">
-        <div class="animate form login_form">
-          <section class="login_content">
-            <form>
-              <h1>Ingreso Empresa</h1>
-              <div>
-                <select class="" required="">
-                  <option value="">Empresa</option>
-                  <option value="">Distribuidora el Sol</option>
-                </select>
-                <br>
-              </div>
-              <div>
-                <input type="text" class="form-control" placeholder="Usuario" required="" />
-              </div>
-              <div>
-                <input type="password" class="form-control" placeholder="Contraseña" required="" />
-              </div>
-              <div>
-                <a class="" href="index4.html">Log in</a>
-                <a class="" href="#">¿Olvidaste la Contraseña?</a>
-              </div>
 
-              <div class="clearfix"></div>
-
-              <div class="separator">
-                <p class="change_link">¿Nuevo en el sitio?
-                  <a href="#signup" class="to_register"> Crea una cuenta </a>
-                </p>
-
-                <div class="clearfix"></div>
-                <br />
-
-                <div>
-                  <h1 class="logoColor2">(</h1><h1 class="logoColor">Serv</h1><h1 class="logoColor2">Easy.TJ)</h1><h1></h1>
-                  <p>©2020 All Rights Reserved. </p>
-                </div>
-              </div>
-            </form>
-          </section>
-        </div>
-
-        <div id="register" class="animate form registration_form">
-          <section class="login_content">
-            <form>
-              <h1>Crea una Cuenta</h1>
-              <div>
-                <input type="text" class="form-control" placeholder="Nombre Empresa" required="" />
-              </div>
-              <div>
-                <input type="text" class="form-control" placeholder="Razon Social" required="" />
-              </div>
-              <div>
-                <input type="number" class="form-control" placeholder="NIT/RUT" required="" />
-                <br>
-              </div>
-              <div>
-                <input type="email" class="form-control" placeholder="Email" required="" />
-              </div>
-              <div>
-                <input type="password" class="form-control" placeholder="Contraseña" required="" />
-              </div>
-              <div>
-                <a class="" href="index.html">Enviar</a>
-              </div>
-
-              <div class="clearfix"></div>
-
-              <div class="separator">
-                <p class="change_link">¿Ya eres miembro?
-                  <a href="#signin" class="to_register"> Log in </a>
-                </p>
-                <div class="clearfix"></div>
-                <br />
-
-                <div>
-                  <!--Logo un poco guache, ala.-->
-                  <h1 class="logoColor2">(</h1><h1 class="logoColor">Serv</h1><h1 class="logoColor2">Easy.TJ)</h1><h1></h1>
-                  <p>©2020 All Rights Reserved. </p>
-                </div>
-              </div>
-            </form>
-          </section>
-        </div>
-      </div>
     </div>
-  </body>
+  </div>
+  <script src="build/js/jquery-3.3.1.min.js"></script>
+  <script src="build/js/popper.min.js"></script>
+  <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="build/js/sweetalert2.all.min.js"></script>
+ <script src="build/js/alertas.js"></script>
+ <script src="build/js/validarEinicio.js"></script>
+</body>
 </html>
