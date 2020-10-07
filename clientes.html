@@ -1,34 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <!-- Meta, title, CSS, favicons, etc. -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" href="images/favicon.ico" type="image/ico" />
+    <!-- para que se vea bien en todos los dispositivos -->
 
-    <title>Distri Sol | Asesor </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- no se produzca error del icono -->
+  <link rel="shortcut icon" href="#" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
 
-    <!-- Bootstrap -->
-    <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="contenido.css" rel="styleshee">
-    <!-- Font Awesome -->
-    <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <!-- NProgress -->
-    <link href="vendors/nprogress/nprogress.css" rel="stylesheet">
-    <!-- iCheck -->
-    <link href="vendors/iCheck/skins/flat/green.css" rel="stylesheet">
-	
-    <!-- bootstrap-progressbar -->
-    <link href="vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
-    <!-- JQVMap -->
-    <link href="vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
-    <!-- bootstrap-daterangepicker -->
-    <link href="vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+  <!-- sweetaler -->
+  <link rel="stylesheet" href="plugins/sweetAlert2/sweetalert2.min.css">
 
-    <!-- Custom Theme Style -->
-    <link href="build/css/custom.min.css" rel="stylesheet">
+  <!-- plugin animate -->
+  <link rel="stylesheet" href="plugins/animate.css/animate.css">
+  <!-- hoja de estilos -->
+  <link rel="stylesheet" href="estilos.css">
+
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="images/favicon.ico" type="image/ico" />
+
+  <title>Distri Sol | Administrador </title>
+
+  <!-- Bootstrap -->
+  <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="contenido.css" rel="styleshee">
+  <!-- Font Awesome -->
+  <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- NProgress -->
+  <link href="vendors/nprogress/nprogress.css" rel="stylesheet">
+  <!-- iCheck -->
+  <link href="vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+  <!-- sweetaler -->
+  <link rel="stylesheet" href="plugins/sweetAlert2/sweetalert2.min.css">
+  <!-- mi JS -->
+  <link href="botones.js">
+
+  <!-- bootstrap-progressbar -->
+  <link href="vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+  <!-- JQVMap -->
+  <link href="vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet" />
+  <!-- bootstrap-daterangepicker -->
+  <link href="vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+  <!-- Custom Theme Style -->
+  <link href="build/css/custom.min.css" rel="stylesheet">
   </head>
 
   <body class="nav-md">
@@ -288,7 +308,7 @@
                       </tr>
                     </tbody>
                   </table></div>
-                  <button type="button" class="btn btn-outline-success">Nuevo cliente</button>
+                  <button  id="nc" type="button" class="btn btn-outline-success">Nuevo cliente</button>
                 </div>
                 <div class="col-md-3 col-sm-3  bg-white">
                  
@@ -370,7 +390,9 @@
         <!-- /footer content -->
       </div>
     </div>
-
+     
+    <!--lo del sweet alert-->
+    <script src="build/js/sweetalert2@10.js"></script>
     <!-- jQuery -->
     <script src="vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
@@ -411,6 +433,10 @@
 
     <!-- Custom Theme Scripts -->
     <script src="build/js/custom.min.js"></script>
-	
+  
+    <script src="codigo.js"></script>
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+  <script src="popper/popper.min.js"></script>
+  <script src="bootstrap4/js/bootstrap.min.js"></script>
   </body>
 </html>
