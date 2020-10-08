@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Meta, title, CSS, favicons, etc. -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="images/favicon.ico" type="image/ico" />
+
+        <title>Distri Sol | Administrador </title>
+        <!--FONT AWESOME-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <!-- Bootstrap -->
+        <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <!-- NProgress -->
+        <link href="vendors/nprogress/nprogress.css" rel="stylesheet">
+        <!-- iCheck -->
+        <link href="vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+
+        <!-- bootstrap-progressbar -->
+        <link href="vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+        <!-- JQVMap -->
+        <link href="vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet" />
+        <!-- bootstrap-daterangepicker -->
+        <link href="vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+        <!--Swift Alert2-->
+        <link rel="stylesheet" href="plugins/sweetAlert2/sweetalert2.min.css">
+        <link rel="stylesheet" href="plugins/sweetAlert2/sweetalert2.min.css">
+        <link rel="stylesheet" href="botones.js">
+        <!-- Custom Theme Style -->
+        <link href="build/css/custom.min.css" rel="stylesheet">
+        <!--CALENDARIO-->
+        <link href="../ServEasy-TJ/vendors/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet">
+        <link href="../ServEasy-TJ/vendors/fullcalendar/dist/fullcalendar.print.css" rel="stylesheet" media="print">
+    </head>
+    <body class="nav-md">
+        <!-- page content -->
+            <div class="title_left">
+                <h3>Autorizaciones de Cierres de Sesión</h3>
+            </div>
+					<div class="row">
+						<div class="col-md-12 ">
+							<div class="x_panel">
+								<div class="x_title">
+									<h2>Formulario de Envío</h2>
+									<ul class="nav navbar-right panel_toolbox">
+										<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+										</li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+											<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+												<a class="dropdown-item" href="#">Settings 1</a>
+												<a class="dropdown-item" href="#">Settings 2</a>
+											</div>
+										</li>
+										<li><a class="close-link"><i class="fa fa-close"></i></a>
+										</li>
+									</ul>
+									<div class="clearfix"></div>
+								</div>
+								<div class="x_content">
+									<br />
+									<form class="form-label-left input_mask">
+
+										<div class="col-md-6 col-sm-6  form-group has-feedback">
+											<input type="text" class="form-control has-feedback-left" id="inputSuccess2" placeholder="Primer Nombre">
+											<span class="fa fa-user form-control-feedback left" aria-hidden="true"></span>
+										</div>
+
+										<div class="col-md-6 col-sm-6  form-group has-feedback">
+											<input type="text" class="form-control" id="inputSuccess3" placeholder="Segundo Nombre">
+											<span class="fa fa-user form-control-feedback right" aria-hidden="true"></span>
+										</div>
+
+										<div class="col-md-6 col-sm-6  form-group has-feedback">
+											<input type="email" class="form-control has-feedback-left" id="inputSuccess4" placeholder="Correo Empresarial">
+											<span class="fa fa-envelope form-control-feedback left" aria-hidden="true"></span>
+										</div>
+
+										<div class="col-md-6 col-sm-6  form-group has-feedback">
+											<input type="tel" class="form-control" id="inputSuccess5" placeholder="Número de Teléfono">
+											<span class="fa fa-phone form-control-feedback right" aria-hidden="true"></span>
+										</div>
+
+										<div class="form-group row">
+											<label class="col-form-label col-md-3 col-sm-3 ">Mensaje de Aprobación/Negación</label >
+											<div class="col-md-9 col-sm-9 ">
+												<input type="text" class="form-control" placeholder="Redacte su Respuesta" required> 
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-form-label col-md-3 col-sm-3 ">Destinatario</label>
+											<div class="col-md-9 col-sm-9 ">
+												<input type="text" class="form-control" disabled="disabled" placeholder="Domiciliario">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-form-label col-md-3 col-sm-3 ">Correo Destinatario</label>
+											<div class="col-md-9 col-sm-9 ">
+												<input type="email" class="form-control" readonly="readonly" placeholder="Correo@gmail.com">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="col-form-label col-md-3 col-sm-3 ">Fecha de Hoy <span class="required">*</span>
+											</label>
+											<div class="col-md-9 col-sm-9 ">
+												<input class="date-picker form-control" placeholder="dd-mm-yyyy" type="text" required="required" type="text" onfocus="this.type='date'" onmouseover="this.type='date'" onclick="this.type='date'" onblur="this.type='text'" onmouseout="timeFunctionLong(this)">
+												<script>
+													function timeFunctionLong(input) {
+														setTimeout(function() {
+															input.type = 'text';
+														}, 60000);
+													}
+												</script>
+											</div>
+										</div>
+										<div class="ln_solid"></div>
+										<div class="form-group row">
+											<div class="col-md-9 col-sm-9  offset-md-3">
+												<button type="button" class="btn btn-primary">Cancelar</button>
+												<button class="btn btn-primary" type="reset">Reiniciar</button>
+                                                <button type="submit" class="btn btn-success" id="enviar">Enviar</button>
+											</div>
+										</div>
+
+									</form>
+								</div>
+                            </div>
+                  
+    <!-- jQuery -->
+<script src="vendors/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<!-- FastClick -->
+<script src="vendors/fastclick/lib/fastclick.js"></script>
+<!-- NProgress -->
+<script src="vendors/nprogress/nprogress.js"></script>
+<!-- FullCalendar -->
+<script src="vendors/moment/min/moment.min.js"></script>
+<script src="vendors/fullcalendar/dist/fullcalendar.min.js"></script>
+<!--Swift Alert-->
+<script src="plugins/sweetAlert2/sweetalert2.all.min.js"></script>
+<script src="botones.js"></script>
+<!-- Custom Theme Scripts -->
+<script src="build/js/custom.min.js"></script>
+    </body>
+</html> 
