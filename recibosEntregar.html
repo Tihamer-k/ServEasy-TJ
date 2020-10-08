@@ -27,6 +27,8 @@
   <link href="vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
   <link href="vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
   <link href="vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+  <!--las alertas--> 
+  <link rel="stylesheet" href="build/css/sweetalert2.min.css">
 
   <!-- Custom Theme Style -->
   <link href="build/css/custom.min.css" rel="stylesheet">
@@ -68,7 +70,7 @@
               <ul class="nav side-menu">
                 <li><a href="index4.html"><i class="fa fa-home "></i> Home </a>
                 </li>
-                <li><a href="#"><i class="fa fa-refresh"></i> Sincronizar Datos </a></li>
+                <li><a id="sincro"><i class="fa fa-refresh"></i> Sincronizar Datos </a></li>
                 <li><a href="recibosEntregar.html"><i class="fa fa-file-text"></i> Recibos </a>
                 </li>
                 <li><a href="calendario.html"><i class="fa fa-calendar"></i> Calendario </a>
@@ -127,52 +129,41 @@
                 <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
                   <li class="nav-item">
                     <a class="dropdown-item">
-                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span class="image"><img src="images/iconos/021-man.png" alt="Profile Image" /></span>
                       <span>
-                        <span>John Smith</span>
-                        <span class="time">3 mins ago</span>
+                        <span>Deyvid Prada</span>
+                        <span class="time">Hace 15 minutos</span>
                       </span>
                       <span class="message">
-                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                        Por favor revisar los reenvios de el dia de ayer.
                       </span>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a class="dropdown-item">
-                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span class="image"><img src="images/iconos/076-man.png" alt="Profile Image" /></span>
                       <span>
-                        <span>John Smith</span>
-                        <span class="time">3 mins ago</span>
+                        <span>Miguel Vega</span>
+                        <span class="time">Hace 65 minutos</span>
                       </span>
                       <span class="message">
-                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                        Revisar el pedido de Cigarreria Diana, ya no va aresivir en la mañana sino en la tarde.
                       </span>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a class="dropdown-item">
-                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span class="image"><img src="images/iconos/010-man.png" alt="Profile Image" /></span>
                       <span>
-                        <span>John Smith</span>
-                        <span class="time">3 mins ago</span>
+                        <span>Juan Gonzales</span>
+                        <span class="time">Hace 12 minutos</span>
                       </span>
                       <span class="message">
-                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                        Tenemos averías en gaseosa Pepsi 1.5L para que lo tengan presente.
                       </span>
                     </a>
                   </li>
-                  <li class="nav-item">
-                    <a class="dropdown-item">
-                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
-                      <span>
-                        <span>John Smith</span>
-                        <span class="time">3 mins ago</span>
-                      </span>
-                      <span class="message">
-                        Film festivals used to be do-or-die moments for movie makers. They were where...
-                      </span>
-                    </a>
-                  </li>
+                 
                   <li class="nav-item">
                     <div class="text-center">
                       <a class="dropdown-item">
@@ -216,8 +207,8 @@
                             <th># Recibo</th>
                             <th>Nombre Establecimiento</th>
                             <th>Cliente</th>
-                            <th>Dirección</th>
-                            <th>Telefono</th>
+                            <th>Dirección Georreferenciada</th>
+                            <th>Telefono de Cliente</th>
                             <th>Estado</th>
                             <th>Monto</th>
                             <th>Opción</th>
@@ -230,8 +221,8 @@
                             <td>121000040</td>
                             <td>CIGARRERIA VICENTE</td>
                             <td>VICENTE</td>
-                            <td>CR 80G 44 05 SUR</td>
-                            <td>3107579202</td>
+                            <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank" class="glyphicon glyphicon-map-marker"></a>CR 80G 44 05 SUR</td>
+                            <td><a href="tel:+573505377054" target="blank" class="glyphicon glyphicon-phone"></a>3107579202</td>
                             <td>Entregado</td>
                             <td>$320,800</td>
                             <td class=" last"><a href="Recibo.html">Ver</a></td>
@@ -240,8 +231,8 @@
                             <td>121000039</td>
                             <td>CIGARRERIA DIANA</td>
                             <td>DIANA</td>
-                            <td>CR 80I # 45A 03 SUR</td>
-                            <td>3208645874</td>
+                            <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank" class="glyphicon glyphicon-map-marker"></a>CR 80I # 45A 03 SUR</td>
+                            <td><a href="tel:+573505377054" target="blank" class="glyphicon glyphicon-phone"></a>3208645874</td>
                             <td>No Entregado</td>
                             <td>$248.600</td>
                             <td class=" last"><a href="Recibo.html">Ver</a></td>
@@ -250,8 +241,8 @@
                             <td>121000038</td>
                             <td>RESTAURANTE ASOCIACION DE ABUELOS</td>
                             <td>MIGUEL</td>
-                            <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank">CR 81C BIS A #43 24</a></td>
-                            <td><a href="tel:+573505377054" target="blank">3124905448</a></td>
+                            <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank" class="glyphicon glyphicon-map-marker"></a> CR 81C BIS A #43 24</td>
+                            <td><a href="tel:+573505377054" target="blank" class="glyphicon glyphicon-phone"></a>3124905448</td>
                             <td>Entregado</td>
                             <td>$320,800</td>
                             <td class=" last"><a href="Recibo.html">Ver</a></td>
@@ -260,8 +251,8 @@
                             <td>121000037</td>
                             <td>SOPITAS EXPRESS </td>
                             <td>AIDA</td>
-                            <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank">CL 45 BIS # 80 17</a></td>
-                            <td><a href="tel:+573505377054" target="blank">3214242572</a></td>
+                            <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank" class="glyphicon glyphicon-map-marker"></a>CL 45 BIS # 80 17</td>
+                            <td><a href="tel:+573505377054" target="blank" class="glyphicon glyphicon-phone"></a>3214242572</td>
                             <td>No Entregado</td>
                             <td>$320,800</td>
                             <td class=" last"><a href="Recibo.html">Ver</a></td>
@@ -270,8 +261,8 @@
                             <td>121000036</td>
                             <td>BON CAFÉ</td>
                             <td>NANCY</td>
-                            <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank">CR 78J # 47B 08</a></td>
-                            <td><a href="tel:+573505377054" target="blank">3118102240</a></td>
+                            <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank" class="glyphicon glyphicon-map-marker"></a>CR 78J # 47B 08</td>
+                            <td><a href="tel:+573505377054" target="blank" class="glyphicon glyphicon-phone"></a>3118102240</td>
                             <td>Entregado</td>
                             <td>$320,800</td>
                             <td class=" last"><a href="Recibo.html">Ver</a></td>
@@ -279,8 +270,8 @@
                           <td>121000035</td>
                             <td>TIENDA HERNAN</td>
                             <td>HERNAN</td>
-                            <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank">CLL 51 SUR 79B 16  PORTERIA 3</a></td>
-                            <td><a href="tel:+573505377054" target="blank">3665554433</a></td>
+                            <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank" class="glyphicon glyphicon-map-marker"></a>CLL 51 SUR 79B 16  PORTERIA 3</td>
+                            <td><a href="tel:+573505377054" target="blank" class="glyphicon glyphicon-phone"></a>3665554433</td>
                             <td>No Entregado</td>
                             <td>$320,800</td>
                             <td class=" last"><a href="Recibo.html">Ver</a></td>
@@ -288,8 +279,8 @@
                           <td>121000034</td>
                             <td>RESTAURANTE THOMAS</td>
                             <td>THOMAS</td>
-                            <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank">CR 81C BIS A #43 24</a></td>
-                            <td><a href="tel:+573505377054" target="blank">3124905448</a></td>
+                            <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank" class="glyphicon glyphicon-map-marker"></a>CR 81C BIS A #43 24</td>
+                            <td><a href="tel:+573505377054" target="blank" class="glyphicon glyphicon-phone"></a>3124905448</td>
                             <td>Entregado</td>
                             <td>$320,800</td>
                             <td class=" last"><a href="Recibo.html">Ver</a></td>
@@ -298,8 +289,8 @@
                             <td>121000033</td>
                             <td>MERCA EXPRESS </td>
                             <td>FULANO</td>
-                            <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank">CL 45 BIS # 80 17</a></td>
-                            <td><a href="tel:+573505377054" target="blank">3214242572</a></td>
+                            <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank" class="glyphicon glyphicon-map-marker"></a>CL 45 BIS # 80 17</td>
+                            <td><a href="tel:+573505377054" target="blank" class="glyphicon glyphicon-phone"></a>3214242572</td>
                             <td>No Entregado</td>
                             <td>$320,800</td>
                             <td class=" last"><a href="Recibo.html">Ver</a></td>
@@ -308,8 +299,8 @@
                             <td>121000032</td>
                             <td>CAFÉ OF GUTY</td>
                             <td>GUSTAVO</td>
-                            <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank">CR 78J # 47B 08</a></td>
-                            <td><a href="tel:+573505377054" target="blank">3118102240</a></td>
+                            <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank" class="glyphicon glyphicon-map-marker"></a>CR 78J # 47B 08</td>
+                            <td><a href="tel:+573505377054" target="blank" class="glyphicon glyphicon-phone"></a>3118102240</td>
                             <td>Entregado</td>
                             <td>$320,800</td>
                             <td class=" last"><a href="Recibo.html">Ver</a></td>
@@ -317,8 +308,8 @@
                           <td>121000031</td>
                             <td>TIENDE EL EDÉN</td>
                             <td>MARCELINO</td>
-                            <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank">CLL 51 SUR 79B 16  PORTERIA 3</a></td>
-                            <td><a href="tel:+573505377054" target="blank">3665554433</a></td>
+                            <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank" class="glyphicon glyphicon-map-marker"></a>CLL 51 SUR 79B 16  PORTERIA 3</td>
+                            <td><a href="tel:+573505377054" target="blank" class="glyphicon glyphicon-phone"></a>3665554433</td>
                             <td>No Entregado</td>
                             <td>$320,800</td>
                             <td class=" last"><a href="Recibo.html">Ver</a></td>
@@ -326,8 +317,8 @@
                           <td>121000030</td>
                           <td>RESTAURANTE MAPACHE</td>
                           <td>MARIO</td>
-                          <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank">CR 81C BIS A #43 24</a></td>
-                          <td><a href="tel:+573505377054" target="blank">3124905448</a></td>
+                          <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank" class="glyphicon glyphicon-map-marker" ></a>CR 81C BIS A #43 24</td>
+                          <td><a href="tel:+573505377054" target="blank" class="glyphicon glyphicon-phone"></a>3124905448</td>
                           <td>Entregado</td>
                           <td>$320,800</td>
                           <td class=" last"><a href="Recibo.html">Ver</a></td>
@@ -336,8 +327,8 @@
                           <td>121000029</td>
                           <td>MERCA EXPRESSITO </td>
                           <td>MENGANO</td>
-                          <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank">CL 45 BIS # 80 17</a></td>
-                          <td><a href="tel:+573505377054" target="blank">3214242572</a></td>
+                          <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank" class="glyphicon glyphicon-map-marker"></a>CL 45 BIS # 80 17</td>
+                          <td><a href="tel:+573505377054" target="blank" class="glyphicon glyphicon-phone"></a>3214242572</td>
                           <td>No Entregado</td>
                           <td>$320,800</td>
                           <td class=" last"><a href="Recibo.html">Ver</a></td>
@@ -346,8 +337,8 @@
                           <td>121000028</td>
                           <td>SALSAMENTARIA PANCRACIA</td>
                           <td>PANCRACIA</td>
-                          <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank">CR 78J # 47B 08</a></td>
-                          <td><a href="tel:+573505377054" target="blank">3118102240</a></td>
+                          <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank" class="glyphicon glyphicon-map-marker"></a>CR 78J # 47B 08</td>
+                          <td><a href="tel:+573505377054" target="blank" class="glyphicon glyphicon-phone"></a>3118102240</td>
                           <td>Entregado</td>
                           <td>$320,800</td>
                           <td class=" last"><a href="Recibo.html">Ver</a></td>
@@ -355,8 +346,8 @@
                         <td>121000027</td>
                           <td>CAFÉ BAR RED</td>
                           <td>REDMUNDO</td>
-                          <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank">CLL 51 SUR 79B 16  PORTERIA 3</a></td>
-                          <td><a href="tel:+573505377054" target="blank">3665554433</a></td>
+                          <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank" class="glyphicon glyphicon-map-marker"></a>CLL 51 SUR 79B 16  PORTERIA 3</td>
+                          <td><a href="tel:+573505377054" target="blank" class="glyphicon glyphicon-phone"></a>3665554433</td>
                           <td>No Entregado</td>
                           <td>$320,800</td>
                           <td class=" last"><a href="Recibo.html">Ver</a></td>
@@ -383,7 +374,13 @@
       <!-- /footer content -->
     </div>
   </div>
-
+<!-- bootstrap-->
+<script src="build/js/jquery-3.3.1.min.js"></script>
+<script src="build/js/popper.min.js"></script>
+<!-- alertas-->
+<script src="build/js/sweetalert2.all.min.js"></script>
+<script src="build/js/alertas.js"></script>
+<script src="build/js/validarEinicio.js"></script>
   <!-- jQuery -->
   <script src="vendors/jquery/dist/jquery.min.js"></script>
   <!-- Bootstrap -->

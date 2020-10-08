@@ -18,6 +18,8 @@
   <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <!-- NProgress -->
   <link href="vendors/nprogress/nprogress.css" rel="stylesheet">
+  <!--las alertas--> 
+  <link rel="stylesheet" href="build/css/sweetalert2.min.css">
 
   <!-- Custom styling plus plugins -->
   <link href="build/css/custom.min.css" rel="stylesheet">
@@ -60,7 +62,7 @@
               <ul class="nav side-menu">
                 <li><a href="index4.html"><i class="fa fa-home "></i> Home </a>
                 </li>
-                <li><a href="#"><i class="fa fa-refresh"></i> Sincronizar Datos </a></li>
+                <li><a id="sincro"><i class="fa fa-refresh"></i> Sincronizar Datos </a></li>
                 <li><a href="recibosEntregar.html"><i class="fa fa-file-text"></i> Recibos </a>
                 </li>
                 <li><a href="calendario.html"><i class="fa fa-calendar"></i> Calendario </a>
@@ -119,52 +121,41 @@
                 <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
                   <li class="nav-item">
                     <a class="dropdown-item">
-                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span class="image"><img src="images/iconos/021-man.png" alt="Profile Image" /></span>
                       <span>
-                        <span>John Smith</span>
-                        <span class="time">3 mins ago</span>
+                        <span>Deyvid Prada</span>
+                        <span class="time">Hace 15 minutos</span>
                       </span>
                       <span class="message">
-                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                        Por favor revisar los reenvios de el dia de ayer.
                       </span>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a class="dropdown-item">
-                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span class="image"><img src="images/iconos/076-man.png" alt="Profile Image" /></span>
                       <span>
-                        <span>John Smith</span>
-                        <span class="time">3 mins ago</span>
+                        <span>Miguel Vega</span>
+                        <span class="time">Hace 65 minutos</span>
                       </span>
                       <span class="message">
-                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                        Revisar el pedido de Cigarreria Diana, ya no va aresivir en la mañana sino en la tarde.
                       </span>
                     </a>
                   </li>
                   <li class="nav-item">
                     <a class="dropdown-item">
-                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span class="image"><img src="images/iconos/010-man.png" alt="Profile Image" /></span>
                       <span>
-                        <span>John Smith</span>
-                        <span class="time">3 mins ago</span>
+                        <span>Juan Gonzales</span>
+                        <span class="time">Hace 12 minutos</span>
                       </span>
                       <span class="message">
-                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                        Tenemos averías en gaseosa Pepsi 1.5L para que lo tengan presente.
                       </span>
                     </a>
                   </li>
-                  <li class="nav-item">
-                    <a class="dropdown-item">
-                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
-                      <span>
-                        <span>John Smith</span>
-                        <span class="time">3 mins ago</span>
-                      </span>
-                      <span class="message">
-                        Film festivals used to be do-or-die moments for movie makers. They were where...
-                      </span>
-                    </a>
-                  </li>
+                 
                   <li class="nav-item">
                     <div class="text-center">
                       <a class="dropdown-item">
@@ -194,7 +185,7 @@
             <div class="col-md-12">
               <div class="x_panel">
                 <div class="x_title">
-                  <h2>Invoice Design</h2>
+                  <h2>Recibo</h2>
 
                   <div class="clearfix"></div>
                 </div>
@@ -364,6 +355,13 @@
       <!-- /footer content -->
     </div>
   </div>
+  <!-- bootstrap-->
+  <script src="build/js/jquery-3.3.1.min.js"></script>
+  <script src="build/js/popper.min.js"></script>
+  <!-- alertas-->
+  <script src="build/js/sweetalert2.all.min.js"></script>
+ <script src="build/js/alertas.js"></script>
+ <script src="build/js/validarEinicio.js"></script>
 
   <!-- jQuery -->
   <script src="vendors/jquery/dist/jquery.min.js"></script>

@@ -1,11 +1,4 @@
-// registro exitoso
-$("#Enviar").click(function () {
-    Swal.fire({
-        type: 'success',
-        title: 'success',
-        text: '¡Registro Exitoso!',
-    });
-});
+
 // olvidó contraseña
 $("#olvidoPassword ").click(function () {
     Swal.mixin({
@@ -27,23 +20,34 @@ $("#olvidoPassword ").click(function () {
         }
       });
 });
-// contraseñas de usuario
-$(function(){
-    var user, pass, opc;
-    $(".iniciar").on("click", function(){
-        user = $(".usuario").val();
-        pass = $(".contraseña1").val();
-        opc = $(".opciones").val();
-        
-        if ((user == "tihamer" && pass == "123" && opc == "Distribuidora el Sol")) {
-            location.href = "index4.html";
-        }
-        else{
-          Swal.fire('usuario o empresa no registrada.')
-        }
-        if (user.length == 0 || pass.length == 0) {
-          Swal.fire('Los campos son obligatorios.')
-      }
-        return false;
-    });
+// datos sincronizados
+let timerInterval
+$("#sincro").click(function () {
+  Swal.fire({
+    title: 'Sincronizando Datos',
+    html: 'Cargando y descargando <strong></strong> archivos.',
+    timer: 4333, //tiempo del timer
+    onBeforeOpen: () => {
+      Swal.showLoading()
+      timerInterval = setInterval(() => {
+        Swal.getContent().querySelector('strong')
+          .textContent = Swal.getTimerLeft()
+      }, 100)
+    },
+    onClose: () => {
+      clearInterval(timerInterval)
+      Swal.fire({
+        type: 'success',
+        title: 'Datos Sincronizados',
+        text: '¡Perfecto!',
+      });
+    }
+  }).then((result) => {
+    if (
+      // Read more about handling dismissals
+      result.dismiss === Swal.DismissReason.timer
+    ) {
+      console.log('I was closed by the timer')
+    }
+  });
 });

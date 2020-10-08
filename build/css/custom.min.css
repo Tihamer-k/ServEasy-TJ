@@ -1344,6 +1344,7 @@
   a:hover,
   a:focus {
     text-decoration: none;
+    color:#97dddf; 
   }
   .navbar {
     margin-bottom: 0;
@@ -1974,7 +1975,6 @@
   }
   .dataTables_paginate a {
     padding: 6px 9px !important;
-    background: #ddd !important;
     border-color: #ddd !important;
   }
   .paging_full_numbers a.paginate_active {
@@ -2009,7 +2009,7 @@
     border-bottom: 1px solid rgba(38, 185, 154, 0.4);
   }
   .dataTables_paginate a {
-    background: #ff0000;
+    background:transparent;
   }
   .dataTables_wrapper {
     position: relative;
