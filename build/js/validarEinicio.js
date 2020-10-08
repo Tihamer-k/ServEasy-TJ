@@ -30,15 +30,24 @@ $(function(){
         pass = $(".contraseña1").val();
         opc = $(".opciones").val();
         
-        if ((user == "tihamer" && pass == "123" && opc == "Distribuidora el Sol")) {
+        if ((user == "Tihamer" && pass == "distri1" && opc == "Distribuidora el Sol")) {
             location.href = "index4.html";
+        }
+        if ((user == "Juan" && pass == "distri2" && opc == "Distribuidora el Sol")) {
+            location.href = "indexLogistico.html";
+        }
+        if ((user == "Deyvid" && pass == "distri3" && opc == "Distribuidora el Sol")) {
+            location.href = "Administrador.html";
+        }
+        if ((user == "Miguel" && pass == "distri4" && opc == "Distribuidora el Sol")) {
+            location.href = "Modulo ventas.html";
+        }
+        if (user.length == 0 || pass.length == 0) {
+            Swal.fire('Los campos son obligatorios.');
         }
         else{
           Swal.fire('usuario o empresa no registrada.')
         }
-        if (user.length == 0 || pass.length == 0) {
-          Swal.fire('Los campos son obligatorios.')
-      }
         return false;
     });
 });

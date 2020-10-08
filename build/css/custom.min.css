@@ -4122,8 +4122,10 @@
   .product_social ul li a i {
     font-size: 35px;
   }
+  
+  
   .login {
-    background: url(https://dm2306files.storage.live.com/y4pJiEEwj94cwaGN6rrQvxDZ1j1eoVWPCnpjHMd108BqkZG_R3GBlHLkQ2j6UhNjP1GE5eLlySjUTw0To1HtJ12ABE8yiUoAFdGk2plEECrTcU1vvznJvsvL7fDTuC1rZrlcby32dZhoCDXEhi9SvPKlohm51wXEc1_of8IRniTJ5fIQ5JWnbqYD-jrApuqvokxtvyQFZQvHA7mrVd9NzSoY77ijRjI112iBdGTOHdj0MA/2020-10-07_01h20_53.png?psid=1&width=1021&height=574) no-repeat center center fixed;   
+    background: url(images/fondoInicio.png) no-repeat center center fixed;   
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
