@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="images/favicon.ico" type="image/ico" />
+
+  <title>Distri Sol | Administrador </title>
+  <!--FONT AWESOME-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Bootstrap -->
+  <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- NProgress -->
+  <link href="vendors/nprogress/nprogress.css" rel="stylesheet">
+  <!-- iCheck -->
+  <link href="vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+
+  <!-- bootstrap-progressbar -->
+  <link href="vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+  <!-- JQVMap -->
+  <link href="vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet" />
+  <!-- bootstrap-daterangepicker -->
+  <link href="vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+  <!-- Custom Theme Style -->
+  <link href="build/css/custom.min.css" rel="stylesheet">
+  <!--CALENDARIO-->
+  <link href="../ServEasy-TJ/vendors/fullcalendar/dist/fullcalendar.min.css" rel="stylesheet">
+  <link href="../ServEasy-TJ/vendors/fullcalendar/dist/fullcalendar.print.css" rel="stylesheet" media="print">
+</head>
+
+<body class="nav-md">
+  <div class="container body">
+    <div class="main_container">
+      <div class="col-md-3 left_col">
+        <div class="left_col scroll-view">
+          <div class="navbar nav_title">
+            <a href="index.html" class="site_title"> <span>
+                <h2 class="logoColor2">(</h1>
+                  <h2 class="logoColor">Serv</h2>
+                  <h2 class="logoColor2">Easy.TJ)</h2>
+                  <h2></h2>
+              </span></a>
+          </div>
+
+          <div class="clearfix"></div>
+
+          <!-- menu profile quick info -->
+          <div class="profile clearfix">
+            <div class="profile_pic">
+              <img src="images/distriSol.png" alt="" class="img-circle profile_img">
+            </div>
+            <div class="profile_info">
+              <span>Bienvenido,</span>
+              <h2>Deyvid Prada</h2>
+            </div>
+          </div>
+          <!-- /menu profile quick info -->
+
+          <br />
+
+          <!-- sidebar menu -->
+          <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+            <div class="menu_section">
+              <h3>Usuario Administrador</h3>
+              <ul class="nav side-menu">
+                <li><a><i class="fa fa-home"></i> Casa <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <!--
+                      <li><a href="index.html">Dashboard</a></li>
+                      <li><a href="index2.html">Dashboard2</a></li>
+                      <li><a href="index3.html">Dashboard3</a></li>
+                    </ul>-->
+                </li>
+                <li><a><i class="fa fa-edit"></i> Prioridades <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="Ordenes.html">Órdenes</a></li>
+                    <li><a href="Validaciones.html">Autorizaciones</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-desktop"></i>Módulos<span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="inbox.html">Mensajes sin leer</a></li>
+                    <li><a href="Calendario.html">Calendario</a></li>
+                  </ul>
+                </li>
+                <!--<li><a><i class="fa fa-bar-chart-o"></i>Estadisticas<span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="chartjs.html">Chart JS</a></li>
+                    <li><a href="chartjs2.html">Chart JS2</a></li>
+                    <li><a href="morisjs.html">Moris JS</a></li>
+                    <li><a href="echarts.html">ECharts</a></li>
+                  </ul>
+                </li>
+                <li><a><i class="fa fa-clone"></i>Recordatorios <span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="fixed_sidebar.html">Añadir</a></li>
+                    <li><a href="fixed_footer.html">Eliminar</a></li>
+                  </ul>-->
+                </li>
+              </ul>
+            </div>
+            <div class="menu_section">
+              <h3>Control de Módulos</h3>
+              <ul class="nav side-menu">
+                <li><a><i class="fa fa-bug"></i>Modificar datos<span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="../ServEasy-TJ/ModificarClientes.html">Clientes</a></li>
+                    <li><a href="../ServEasy-TJ/ModificarAdmin.html">Administradores</a></li>
+                    <li><a href="../ServEasy-TJ/ModificarDomiciliario.html">Domiciliarios</a></li>
+                    <li><a href="../ServEasy-TJ/ModificarAComercial.html.html">Asesores Comerciales </a></li>
+                    <li><a href="../ServEasy-TJ/ModificarLogistica.html">Distribuidores</a></li>
+                  </ul>
+                </li>
+                </li>
+                <!--Sección de creación-->
+                <li><a><i class="fa fa-sitemap"></i>Crear Cuenta<span class="fa fa-chevron-down"></span></a>
+                  <ul class="nav child_menu">
+                    <li><a href="../ServEasy-TJ/RegistroClientes.html">Para Cliente</a>
+                    <li><a>Para Empleado<span class="fa fa-chevron-down"></span></a>
+                      <ul class="nav child_menu">
+                        <li class="sub_menu"><a href="../ServEasy-TJ/RegistroAComercial.html">Asesor Comercial</a>
+                        </li>
+                        <li><a href="../ServEasy-TJ/RegistroLogistico.html">Operador Logistico</a>
+                        </li>
+                        <li><a href="../ServEasy-TJ/RegistroDomiciliario.html">Domiciliario</a>
+                        </li>
+                        <li><a href="../ServEasy-TJ/RegistroAdmin.html">Administrador</a>
+                        </li>
+                      </ul>
+                    </li>
+                </li>
+              </ul>
+              </li>
+              <!--<li><a href="javascript:void(0)"><i class="fa fa-laptop"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li>-->
+              </ul>
+            </ul>
+            </div>
+
+          </div>
+          <!-- /sidebar menu -->
+
+          <!--Botones para Salir -->
+          <div class="sidebar-footer hidden-small">
+            <a data-toggle="tooltip" data-placement="top" title="Settings">
+              <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+            </a>
+
+
+            <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+              <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+            </a>
+          </div>
+          <!-- /menu footer buttons -->
+        </div>
+      </div>
+
+      <!-- top navigation -->
+      <div class="top_nav">
+        <div class="nav_menu">
+          <div class="nav toggle">
+            <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+          </div>
+          <nav class="nav navbar-nav">
+            <ul class=" navbar-right">
+              <li class="nav-item dropdown open" style="padding-left: 15px;">
+                <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown"
+                  data-toggle="dropdown" aria-expanded="false">
+                  <img src="images/iconos/025-man.png" alt="">Deyvid Prada
+                </a>
+                <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="javascript:;"> Perfil</a>
+                  <a class="dropdown-item" href="javascript:;">
+                    <span>Configuración</span>
+                  </a>
+                  <a class="dropdown-item" href="javascript:;">Ayuda</a>
+                  <a class="dropdown-item" href="login.html"><i class="fa fa-sign-out pull-right"></i>Salir</a>
+                </div>
+              </li>
+
+              <li role="presentation" class="nav-item dropdown open">
+                <a href="javascript:;" class="dropdown-toggle info-number" id="navbarDropdown1" data-toggle="dropdown"
+                  aria-expanded="false">
+                  <i class="fa fa-envelope-o"></i>
+                  <span class="badge bg-green">6</span>
+                </a>
+                <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
+                  <li class="nav-item">
+                    <a class="dropdown-item">
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>Operador Logístico -</span>
+                        <span>Reabastecimiento de productos </span>
+                        <span class="time">hace 2 minutos</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item">
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>Operador Logístico -</span>
+                        <span>Reabastecimiento de productos </span>
+                        <span class="time">hace 2 minutos</span>
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item">
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>Domiciliario</span>                       
+                        <span class="time">hace 2 minutos</span>
+                      </span>
+                      <span class="message">
+                        Solicito el cierre de sesión para finalizar ruta...
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item">
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>Operador Logístico -</span>
+                        <span>Reabastecimiento de productos </span>
+                        <span class="time">hace 2 minutos</span>
+                      </span>
+                     <!--<span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                      </span>-->
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <div class="text-center">
+                      <a class="dropdown-item">
+                        <strong>Mirar todas las Alertar y Notificaciones</strong>
+                        <i class="fa fa-angle-right"></i>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- /top navigation -->
+
+      <!-- Contenido de la pagina -->
+      <div class="right_col" role="main">
+        <!-- top tiles -->
+        
+        <!-- /top tiles -->
+
+        <div class="row">
+          <div class="col-md-12 col-sm-12 ">
+            <div class="dashboard_graph">
+
+              <div class="row x_title">
+                <div class="col-md-6">
+                  <h3>Ventas del Día</h3>
+                </div>
+                <div class="col-md-6">
+                  <div id="reportrange" class="pull-right"
+                    style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
+                    <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+                    <span>Diciembre 30, 2019 - Enero 28, 2021</span> <b class="caret"></b>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-9 col-sm-9 ">
+                <div id="chart_plot_01" class="demo-placeholder"></div>
+              </div>
+              <div class="col-md-3 col-sm-3  bg-white">
+                <div class="x_title">
+                  <h2>Estadisticas de Ventas</h2>
+                  <div class="clearfix"></div>
+                </div>
+
+                <div class="col-md-12 col-sm-12 ">
+                  <div>
+                    <p>Día Lunes</p>
+                    <div class="">
+                      <div class="progress progress_sm" style="width: 70%;">
+                        <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="80"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <p>Día Martes</p>
+                    <div class="">
+                      <div class="progress progress_sm" style="width: 70%;">
+                        <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="60"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 col-sm-12 ">
+                  <div>
+                    <p>Día Miercoles</p>
+                    <div class="">
+                      <div class="progress progress_sm" style="width: 70%;">
+                        <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="40"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <p>Día Jueves</p>
+                    <div class="">
+                      <div class="progress progress_sm" style="width: 70%;">
+                        <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="50"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <p>Día Viernes</p>
+                    <div class="">
+                      <div class="progress progress_sm" style="width: 70%;">
+                        <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="50"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <p>Día Sábado</p>
+                    <div class="">
+                      <div class="progress progress_sm" style="width: 70%;">
+                        <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="50"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <p>Día Domingo</p>
+                    <div class="">
+                      <div class="progress progress_sm" style="width: 70%;">
+                        <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="50"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div class="clearfix"></div>
+            </div>
+          </div>
+
+        </div>
+        <br />
+
+        <div class="row">
+
+
+          <div class="col-md-4 col-sm-4 ">
+            <div class="x_panel tile fixed_height_320">
+              <div class="x_title">
+                <h2>Productos más Vendidos</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i
+                        class="fa fa-wrench"></i></a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Settings 1</a>
+                      <a class="dropdown-item" href="#">Settings 2</a>
+                    </div>
+                  </li>
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+              <div class="x_content">
+                <h4>Productos:</h4>
+                <div class="widget_summary">
+                  <div class="w_left w_25">
+                    <span>CocaCola</span>
+                  </div>
+                  <div class="w_center w_55">
+                    <div class="progress">
+                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                        aria-valuemax="100" style="width: 66%;">
+                        <span class="sr-only">60% Complete</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w_right w_20">
+                    <span>123U</span>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+
+                <div class="widget_summary">
+                  <div class="w_left w_25">
+                    <span>SpeedMax</span>
+                  </div>
+                  <div class="w_center w_55">
+                    <div class="progress">
+                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                        aria-valuemax="100" style="width: 45%;">
+                        <span class="sr-only">60% Complete</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w_right w_20">
+                    <span>53U</span>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="widget_summary">
+                  <div class="w_left w_25">
+                    <span>Pepsi</span>
+                  </div>
+                  <div class="w_center w_55">
+                    <div class="progress">
+                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                        aria-valuemax="100" style="width: 25%;">
+                        <span class="sr-only">60% Complete</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w_right w_20">
+                    <span>23U</span>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="widget_summary">
+                  <div class="w_left w_25">
+                    <span>Sprite</span>
+                  </div>
+                  <div class="w_center w_55">
+                    <div class="progress">
+                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                        aria-valuemax="100" style="width: 5%;">
+                        <span class="sr-only">60% Complete</span>
+                      </div>
+<<<<<<< HEAD
+
+                      <div class="clearfix"></div>
+
+                      <div class="row weather-days">
+                        <div class="col-sm-2">
+                          <div class="daily-weather">
+                            <h2 class="day">Mon</h2>
+                            <h3 class="degrees">25</h3>
+                            <canvas id="clear-day" width="32" height="32"></canvas>
+                            <h5>15 <i>km/h</i></h5>
+                          </div>
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="daily-weather">
+                            <h2 class="day">Tue</h2>
+                            <h3 class="degrees">25</h3>
+                            <canvas height="32" width="32" id="rain"></canvas>
+                            <h5>12 <i>km/h</i></h5>
+                          </div>
+                          <!--agregando mensaje -->
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="daily-weather">
+                            <h2 class="day">Wed</h2>
+                            <h3 class="degrees">27</h3>
+                            <canvas height="32" width="32" id="snow"></canvas>
+                            <h5>14 <i>km/h</i></h5>
+                          </div>
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="daily-weather">
+                            <h2 class="day">Thu</h2>
+                            <h3 class="degrees">28</h3>
+                            <canvas height="32" width="32" id="sleet"></canvas>
+                            <h5>15 <i>km/h</i></h5>
+                          </div>
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="daily-weather">
+                            <h2 class="day">Fri</h2>
+                            <h3 class="degrees">28</h3>
+                            <canvas height="32" width="32" id="wind"></canvas>
+                            <h5>11 <i>km/h</i></h5>
+                          </div>
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="daily-weather">
+                            <h2 class="day">Sat</h2>
+                            <h3 class="degrees">26</h3>
+                            <canvas height="32" width="32" id="cloudy"></canvas>
+                            <h5>10 <i>km/h</i></h5>
+                          </div>
+                        </div>
+                        <div class="clearfix"></div>
+=======
+                    </div>
+                  </div>
+                  <div class="w_right w_20">
+                    <span>30U</span>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="widget_summary">
+                  <div class="w_left w_25">
+                    <span>Aguas Cielo</span>
+                  </div>
+                  <div class="w_center w_55">
+                    <div class="progress">
+                      <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+                        aria-valuemax="100" style="width: 2%;">
+                        <span class="sr-only">70% Complete</span>
+>>>>>>> Deyvid
+                      </div>
+                    </div>
+                  </div>
+                  <div class="w_right w_20">
+                    <span>10U</span>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-sm-4 ">
+            <div class="x_panel tile fixed_height_320 overflow_hidden">
+              <div class="x_title">
+                <h2>Número de Pedidos</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i
+                        class="fa fa-wrench"></i></a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Settings 1</a>
+                      <a class="dropdown-item" href="#">Settings 2</a>
+                    </div>
+                  </li>
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+              <div class="x_content">
+                <table class="" style="width:100%">
+                  <tr>
+                    <th style="width:37%;">
+                      <p>Lunes a Viernes</p>
+                    </th>
+                    <th>
+                      <div class="col-lg-7 col-md-7 col-sm-7 ">
+                        <p class="">Días</p>
+                      </div>
+                      <div class="col-lg-5 col-md-5 col-sm-5 ">
+                        <p class="">Cantidad</p>
+                      </div>
+                    </th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <canvas class="canvasDoughnut" height="140" width="140" style="margin: 15px 10px 10px 0"></canvas>
+                    </td>
+                    <td>
+                      <table class="tile_info">
+                        <tr>
+                          <td>
+                            <p><i class="fa fa-square blue"></i>CocaCola </p>
+                          </td>
+                          <td>30%</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p><i class="fa fa-square green"></i>Pepsi </p>
+                          </td>
+                          <td>10%</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p><i class="fa fa-square purple"></i>SpeedMax </p>
+                          </td>
+                          <td>20%</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p><i class="fa fa-square aero"></i>Aguas Cielo </p>
+                          </td>
+                          <td>15%</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p><i class="fa fa-square red"></i>Otros</p>
+                          </td>
+                          <td>30%</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <!-- page content -->
+          <div class="right_col" role="main">
+            <div class="">
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        <!-- /page content -->
+
+        <!-- footer content -->
+        <footer>
+          <div class="pull-right">
+            Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+          </div>
+          <div class="clearfix"></div>
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+        <!--Calendar modal-->
+        <div id="CalenderModalNew" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+          
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel">Nuevo Calendario </h4>
+              </div>
+              <div class="modal-body">
+                <div id="testmodal" style="padding: 5px 20px;">
+                  <form id="antoform" class="form-horizontal calender" role="form">
+                    <div class="form-group">
+                      <label class="col-sm-3 control-label">Titulo</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" id="title" name="title">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-3 control-label">Descripción</label>
+                      <div class="col-sm-9">
+                        <textarea class="form-control" style="height:55px;" id="descr" name="descr"></textarea>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default antoclose" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary antosubmit">Guardar Cambios</button>
+              </div>
+            </div>
+          </div>
+          </div>
+          <div id="CalenderModalEdit" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+          
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4 class="modal-title" id="myModalLabel2">Editar Calendario de Entrada</h4>
+              </div>
+              <div class="modal-body">
+          
+                <div id="testmodal2" style="padding: 5px 20px;">
+                  <form id="antoform2" class="form-horizontal calender" role="form">
+                    <div class="form-group">
+                      <label class="col-sm-3 control-label">Titulo</label>
+                      <div class="col-sm-9">
+                        <input type="text" class="form-control" id="title2" name="title2">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="col-sm-3 control-label">Descripción</label>
+                      <div class="col-sm-9">
+                        <textarea class="form-control" style="height:55px;" id="descr2" name="descr"></textarea>
+                      </div>
+                    </div>
+          
+                  </form>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default antoclose2" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary antosubmit2">Guardar Cambios</button>
+              </div>
+            </div>
+          </div>
+          </div>
+          
+          <div id="fc_create" data-toggle="modal" data-target="#CalenderModalNew"></div>
+          <div id="fc_edit" data-toggle="modal" data-target="#CalenderModalEdit"></div>
+      
+     
+    <!-- /calendar modal -->
+    <div id="CalendarModalNew" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
+    <div id="CalendarModalEdit" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
+    <!-- jQuery -->
+    <script src="../vendors/jqfuery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+   <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- FullCalendar -->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/fullcalendar/dist/fullcalendar.min.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+
+          <!--
+          <div class="col-md-4 col-sm-4 ">
+            <div class="x_panel tile fixed_height_320">
+              <div class="x_title">
+                <h2>Cantidad de Domiciliarios Disponibles</h2>
+                <ul class="nav navbar-right panel_toolbox">
+                  <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i
+                        class="fa fa-wrench"></i></a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Settings 1</a>
+                      <a class="dropdown-item" href="#">Settings 2</a>
+                    </div>
+                  </li>
+                  <li><a class="close-link"><i class="fa fa-close"></i></a>
+                  </li>
+                </ul>
+                <div class="clearfix"></div>
+              </div>
+              <div class="x_content">
+                <div class="dashboard-widget-content">
+                  <ul class="quick-list">
+                    <li><i class="fa fa-calendar-o"></i><a href="#">Settings</a>
+                    </li>
+                    <li><i class="fa fa-bars"></i><a href="#">Subscription</a>
+                    </li>
+                    <li><i class="fa fa-bar-chart"></i><a href="#">Auto Renewal</a> </li>
+                    <li><i class="fa fa-line-chart"></i><a href="#">Achievements</a>
+                    </li>
+                    <li><i class="fa fa-bar-chart"></i><a href="#">Auto Renewal</a> </li>
+                    <li><i class="fa fa-line-chart"></i><a href="#">Achievements</a>
+                    </li>
+                    <li><i class="fa fa-area-chart"></i><a href="#">Logout</a>
+                    </li>
+                  </ul>
+
+                  <div class="sidebar-widget">
+                    <h4>Profile Completion</h4>
+                    <canvas width="150" height="80" id="chart_gauge_01" class=""
+                      style="width: 160px; height: 100px;"></canvas>
+                    <div class="goal-wrapper">
+                      <span id="gauge-text" class="gauge-value pull-left">0</span>
+                      <span class="gauge-value pull-left">%</span>
+                      <span id="goal-text" class="goal-value pull-right">100%</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        -->
+
+        
+              <!-- end of weather widget -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /page content -->
+
+      <!-- footer content -->
+      <footer>
+        <div class="pull-right">
+          Powered by ServEasy.TJ
+        </div>
+        <div class="clearfix"></div>
+      </footer>
+      <!-- /footer content -->
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="vendors/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- FastClick -->
+  <script src="vendors/fastclick/lib/fastclick.js"></script>
+  <!-- NProgress -->
+  <script src="vendors/nprogress/nprogress.js"></script>
+  <!-- Chart.js -->
+  <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
+  <!-- gauge.js -->
+  <script src="vendors/gauge.js/dist/gauge.min.js"></script>
+  <!-- bootstrap-progressbar -->
+  <script src="vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+  <!-- iCheck -->
+  <script src="vendors/iCheck/icheck.min.js"></script>
+  <!-- Skycons -->
+  <script src="vendors/skycons/skycons.js"></script>
+  <!-- Flot -->
+  <script src="vendors/Flot/jquery.flot.js"></script>
+  <script src="vendors/Flot/jquery.flot.pie.js"></script>
+  <script src="vendors/Flot/jquery.flot.time.js"></script>
+  <script src="vendors/Flot/jquery.flot.stack.js"></script>
+  <script src="vendors/Flot/jquery.flot.resize.js"></script>
+  <!-- Flot plugins -->
+  <script src="vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+  <script src="vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+  <script src="vendors/flot.curvedlines/curvedLines.js"></script>
+  <!-- DateJS -->
+  <script src="vendors/DateJS/build/date.js"></script>
+  <!-- JQVMap -->
+  <script src="vendors/jqvmap/dist/jquery.vmap.js"></script>
+  <script src="vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+  <script src="vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+  <!-- bootstrap-daterangepicker -->
+  <script src="vendors/moment/min/moment.min.js"></script>
+  <script src="vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+  <!-- Custom Theme Scripts -->
+  <script src="build/js/custom.min.js"></script>
+  <script src=""></script>
+
+</body>
+
+</html>
