@@ -8,7 +8,7 @@ $(function(){
         id = $(".nit").val();
         email = $(".mail").val()
         passwd = $(".passw").val();;
-        if (name.length == 0) {
+        if (name.length == 0 || ras.length == 0 || id.length == 0 || email.length == 0 || passwd.length == 0) {
             Swal.fire('Los campos no pueden quedar vacios.')
 
         }
