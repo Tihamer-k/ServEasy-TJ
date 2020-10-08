@@ -1,13 +1,18 @@
 
 // registro exitoso
 $(function(){
-    var name;
+    var name, ras, id, email, passwd;
     $(".accion").on("click", function(){
         name = $(".nombre").val();
+        ras = $(".razon").val();
+        id = $(".nit").val();
+        email = $(".mail").val()
+        passwd = $(".passw").val();;
         if (name.length == 0) {
             Swal.fire('Los campos no pueden quedar vacios.')
 
-        }else{
+        }
+        else{
             Swal.fire({
                 type: 'success',
                 title: 'success',
