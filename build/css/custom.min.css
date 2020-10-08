@@ -925,6 +925,7 @@
   .profile_pic {
     width: 40%;
   }
+ 
   .img-circle.profile_img {
     width: 230%;
     padding-left: 15%;
@@ -1026,6 +1027,7 @@
   }
   body .container.body .right_col {
     background: #f7f7f7;
+    
   }
   .nav-md .container.body .right_col {
     padding: 10px 20px 0;
@@ -1162,7 +1164,7 @@
   }
   body {
     color: #73879c;
-    background: #2a3f54;
+    background: #344d66;
     font-family: "Helvetica Neue", Roboto, Arial, "Droid Sans", sans-serif;
     font-size: 13px;
     font-weight: 400;
@@ -1321,7 +1323,7 @@
     margin-bottom: 10px;
   }
   a {
-    color: #5a738e;
+    color: #cfdaf7;
     text-decoration: none;
   }
   a,
@@ -1342,6 +1344,7 @@
   a:hover,
   a:focus {
     text-decoration: none;
+    color:#97dddf; 
   }
   .navbar {
     margin-bottom: 0;
@@ -1972,7 +1975,6 @@
   }
   .dataTables_paginate a {
     padding: 6px 9px !important;
-    background: #ddd !important;
     border-color: #ddd !important;
   }
   .paging_full_numbers a.paginate_active {
@@ -2007,7 +2009,7 @@
     border-bottom: 1px solid rgba(38, 185, 154, 0.4);
   }
   .dataTables_paginate a {
-    background: #ff0000;
+    background:transparent;
   }
   .dataTables_wrapper {
     position: relative;
@@ -4121,8 +4123,27 @@
     font-size: 35px;
   }
   .login {
-    background: #f7f7f7;
+    background: url(https://dm2306files.storage.live.com/y4pJiEEwj94cwaGN6rrQvxDZ1j1eoVWPCnpjHMd108BqkZG_R3GBlHLkQ2j6UhNjP1GE5eLlySjUTw0To1HtJ12ABE8yiUoAFdGk2plEECrTcU1vvznJvsvL7fDTuC1rZrlcby32dZhoCDXEhi9SvPKlohm51wXEc1_of8IRniTJ5fIQ5JWnbqYD-jrApuqvokxtvyQFZQvHA7mrVd9NzSoY77ijRjI112iBdGTOHdj0MA/2020-10-07_01h20_53.png?psid=1&width=1021&height=574) no-repeat center center fixed;   
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    color: #cfdaf7;
   }
+  .caja{
+    background: rgba(82, 80, 80, 0.616);
+    backdrop-filter: blur(2px);
+  padding: 1.3em;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: auto;
+  height: auto;
+  float: none;
+  margin: 0.15%;
+  
+  }
+  
   .login .fa-paw {
     font-size: 26px;
   }
@@ -4208,10 +4229,9 @@
   }
   .login_content {
     margin: 0 auto;
-    padding: 25px 0 0;
+    padding: 2% 6% 0px;
     position: relative;
     text-align: center;
-    text-shadow: 0 1px 0 #fff;
     min-width: 280px;
   }
   .login_content a,
