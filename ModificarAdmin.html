@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar datos</title>
+    <link rel="stylesheet" href="css/Estilosregistrar.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../MenúDesplegable/css1/fontawesome.min.css">
+</head>
+<body>
+    <div class="contenedor-form">
+        <div class="toggle">
+               <!-- <a href="C:\Users\sanys\OneDrive\PROYECTO ADSI\Fase 3\Diseño Web III\Módulo Administrativo\Iniciarsesión.html"> 
+                   <Span>Iniciar sesión</Span></a>-->
+    </div>  
+<div class="contenedor-form">
+<div class="Formulario">
+    <h2>Modificar datos: Administrador</h2>
+    <form action="#">
+        <input type="text" id="user" placeholder="Usuario" >
+        <input type="text" id="usertype" placeholder="Tipo de Usuario" >
+        <input type="password" id="contra" placeholder="Escriba su contraseña" >
+        <input type="password" id="contra1" placeholder="Esriba de nuevo su contraseña" >
+        <input type="text" id="correo" placeholder= "E-mail" />
+        <input type="text" id="direc" placeholder="Dirección">
+        <input type="text" id="barr" placeholder="Barrio">
+        <input type="text" id="cargo" placeholder="Cargo empresarial" >
+        <input type="submit" id="crear" value="Guardar cambios">
+    </form>
+    <style>
+        body {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
+    </style>
+    <script>
+        Swal.fire({
+  title: 'Do you want to save the changes?',
+  showDenyButton: true,
+  showCancelButton: true,
+  confirmButtonText: `Save`,
+  denyButtonText: `Don't save`,
+}).then((result) => {
+  /* Read more about isConfirmed, isDenied below */
+  if (result.isConfirmed) {
+    Swal.fire('Saved!', '', 'success')
+  } else if (result.isDenied) {
+    Swal.fire('Changes are not saved', '', 'info')
+  }
+})
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</body>
+</html>
