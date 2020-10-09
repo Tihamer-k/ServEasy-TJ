@@ -17,6 +17,7 @@ $(function () {
                 text: '¡Registro Exitoso!',
             });
         }
+        return false;
     });
 });
 

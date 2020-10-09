@@ -4123,9 +4123,10 @@
     font-size: 35px;
   }
   .login {
-    background: url("https://southcentralus1-mediap.svc.ms/transform/thumbnail?provider=spo&inputFormat=png&cs=fFNQTw&docid=https%3A%2F%2Fmisenaeduco-my.sharepoint.com%3A443%2F_api%2Fv2.0%2Fdrives%2Fb!McltsCg2IUW3HwC4omxF_pqhEnqvSoBMq5LZ44xwejGqGKHEGjC-RpVSTB--eGuP%2Fitems%2F01NCCOYYS7XBMNQVKEL5F3KTEWIXXDWREU%3Fversion%3DPublished&encodeFailures=1&ctag=%22c%3A%7BD858B85F-4455-4B5F-B54C-9645EE3B4494%7D%2C2%22&srcWidth=&srcHeight=&width=1033&height=580&action=Access") fixed no-repeat;
+    background: url("https://southcentralus1-mediap.svc.ms/transform/thumbnail?provider=spo&inputFormat=png&cs=fFNQTw&docid=https%3A%2F%2Fmisenaeduco-my.sharepoint.com%3A443%2F_api%2Fv2.0%2Fdrives%2Fb!McltsCg2IUW3HwC4omxF_pqhEnqvSoBMq5LZ44xwejGqGKHEGjC-RpVSTB--eGuP%2Fitems%2F01NCCOYYS7XBMNQVKEL5F3KTEWIXXDWREU%3Fversion%3DPublished&encodeFailures=1&ctag=%22c%3A%7BD858B85F-4455-4B5F-B54C-9645EE3B4494%7D%2C2%22&srcWidth=&srcHeight=&width=1033&height=580&action=Access") fixed;
     color: #cfdaf7;
     background-size: cover;
+    background-repeat: no-repeat;
   }
   .caja{
     background: rgba(82, 80, 80, 0.616);
