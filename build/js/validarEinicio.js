@@ -28,7 +28,7 @@ $(function () {
         pass = $(".contraseña1").val();
         opc = $(".opciones").val();
 
-        if (user.length == 0 || pass.length == 0) {
+        if (user.length == 0 || pass.length == 0 || opc.length == 0 ) {
             Swal.fire('Los campos son obligatorios.');
         }
         if ((user == "Tihamer" && pass == "distri1" && opc == "Distribuidora el Sol")) {
