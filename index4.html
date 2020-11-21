@@ -10,7 +10,7 @@
   <link rel="icon" href="images/favicon.ico" type="image/ico" />
 
   <title>Distri Sol | Domiciliario </title>
-
+  <link href="css/traslate.css">
   <!-- Bootstrap -->
   <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Font Awesome -->
@@ -26,7 +26,7 @@
   <link href="vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet" />
   <!-- bootstrap-daterangepicker -->
   <link href="vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
-  <!--las alertas--> 
+  <!--las alertas-->
   <link rel="stylesheet" href="build/css/sweetalert2.min.css">
 
   <!-- Custom Theme Style -->
@@ -162,7 +162,7 @@
                       </span>
                     </a>
                   </li>
-                 
+
                   <li class="nav-item">
                     <div class="text-center">
                       <a class="dropdown-item">
@@ -187,17 +187,17 @@
               <div class="x_panel">
                 <div class="x_title">
                   <h2>Gestión de Entregas</h2>
-                 
+
                   <div class="clearfix"></div>
                 </div>
                 <div class="x_content">
-                  <table class="" >
+                  <table class="">
                     <tr>
-                      
+
                       <th>
                         <div class="col-lg-12 col-md-12 col-sm-12 ">
                           <p class="">Revisa constantemente tu progreso de Entregas aqui.</p>
-                          
+
                         </div>
                         <div class="col-lg-9 col-md-9 col-sm-9 ">
                           <p class="">Estados</p>
@@ -205,12 +205,12 @@
                         <div class="col-lg-3 col-md-3 col-sm-3 ">
                           <p class="">Progreso</p>
                         </div>
-                       
-                        
+
+
                       </th>
-                      
+
                     <tr>
-                      
+
                       <td>
                         <table class="tile_info">
                           <tr>
@@ -219,7 +219,7 @@
                             </td>
                             <td>30%</td>
                           </tr>
-                         
+
                           <tr>
                             <td>
                               <p><i class="fa fa-square green"></i>No Entregados </p>
@@ -237,17 +237,17 @@
                               <p><i class="fa fa-square red"></i>Recaudos Realizados</p>
                             </td>
                             <td>30%</td>
-                            <br/>
+                            <br />
                           </tr>
-                          
-                          
-                          
+
+
+
                           <tr>
                             <td>
-                              <canvas class="canvasDoughnut" height="240" width="240" ></canvas>
+                              <canvas class="canvasDoughnut" height="240" width="240"></canvas>
                             </td>
                           </tr>
-                          
+
                         </table>
                       </td>
                     </tr>
@@ -260,7 +260,7 @@
               <div class="x_panel">
                 <div class="x_title">
                   <h2>Tareas del Día </h2>
-                  
+
                   <div class="clearfix"></div>
                 </div>
                 <div class="x_content">
@@ -312,10 +312,11 @@
                         <p>
                           <input type="checkbox" class="flat"> Revisar si hay averias.</p>
                       </li>
-                      
+
                       <li>
                         <p>
-                          <input type="checkbox" class="flat"> Marque este antes de sincronizar datos para finalizar ruta, gracias por su labor hoy.</p>
+                          <input type="checkbox" class="flat"> Marque este antes de sincronizar datos para finalizar
+                          ruta, gracias por su labor hoy.</p>
                       </li>
 
                     </ul>
@@ -324,7 +325,7 @@
               </div>
             </div>
             <!-- End to do list -->
-            
+
 
 
 
@@ -338,24 +339,39 @@
 
     <!-- footer content -->
     <footer>
+      <!--<div>
+        <h3>Translate</h3>
+	<div class="Idioma" onclick="cambiarIdioma('ingles')">-English-</div>
+	<div class="Idioma" onclick="cambiarIdioma('español')">-Spanish-</div>
+      </div> -->
+      <a href="http://free-website-translation.com/?es" id="ftwtranslation_button" hreflang="es" title=""
+        style="border:0;"><img src="http://free-website-translation.com/img/fwt_button_en.gif" id="ftwtranslation_image"
+          alt="Herramienta de traducciÃ³n gratuita de pÃ¡ginas web" style="border:0;" /></a><br /><a
+        href="http://free-website-translation.com/?es"
+        style="font-size:10px;font-family:verdana;color:#000;margin:2px 4px;margin-top:0;">by
+        free-website-translation.com</a>
+      <script type="text/javascript" src="http://free-website-translation.com/scripts/fwt.js" />
+      </script>
       <div class="pull-right">
         Powered by ServEasy.TJ
       </div>
       <div class="clearfix"></div>
     </footer>
     <!-- /footer content -->
+
   </div>
   </div>
-<!-- bootstrap-->
-<script src="build/js/jquery-3.3.1.min.js"></script>
-<script src="build/js/popper.min.js"></script>
-<!-- alertas-->
-<script src="build/js/sweetalert2.all.min.js"></script>
-<script src="build/js/alertas.js"></script>
-<script src="build/js/validarEinicio.js"></script>
+  <script src="js/traslate.js"></script>
+  <!-- bootstrap-->
+  <script src="build/js/jquery-3.3.1.min.js"></script>
+  <script src="build/js/popper.min.js"></script>
+  <!-- alertas-->
+  <script src="build/js/sweetalert2.all.min.js"></script>
+  <script src="build/js/alertas.js"></script>
+  <script src="build/js/validarEinicio.js"></script>
   <!-- jQuery -->
   <script src="vendors/jquery/dist/jquery.min.js"></script>
-  
+
   <!-- Bootstrap -->
   <script src="vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <!-- FastClick -->
