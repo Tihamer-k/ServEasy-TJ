@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="images/favicon.ico" type="image/ico" />
+
+  <title>Distri Sol | Domiciliario </title>
+
+  <!-- Bootstrap -->
+  <link href="cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+  <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- NProgress -->
+  <link href="vendors/nprogress/nprogress.css" rel="stylesheet">
+  <!-- iCheck -->
+  <link href="vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+  <!-- Datatables -->
+
+  <link href="vendors/datatables.net-bs/css/dataTables.bootstrap.min.css" rel="stylesheet">
+  <link href="vendors/datatables.net-buttons-bs/css/buttons.bootstrap.min.css" rel="stylesheet">
+  <link href="vendors/datatables.net-fixedheader-bs/css/fixedHeader.bootstrap.min.css" rel="stylesheet">
+  <link href="vendors/datatables.net-responsive-bs/css/responsive.bootstrap.min.css" rel="stylesheet">
+  <link href="vendors/datatables.net-scroller-bs/css/scroller.bootstrap.min.css" rel="stylesheet">
+  <!--las alertas--> 
+  <link rel="stylesheet" href="build/css/sweetalert2.min.css">
+
+  <!-- Custom Theme Style -->
+  <link href="build/css/custom.min.css" rel="stylesheet">
+
+<body class="nav-md">
+  <div class="container body">
+    <div class="main_container">
+      <div class="col-md-3 left_col">
+        <div class="left_col scroll-view">
+          <div class="navbar nav_title">
+            <a href="index4.html" class="site_title"> <span>
+                <h2 class="logoColor2"> (</h1>
+                  <h2 class="logoColor">Serv</h2>
+                  <h2 class="logoColor2">Easy.TJ)</h2>
+                  <h2></h2>
+              </span></a>
+          </div>
+
+          <div class="clearfix"></div>
+
+          <!-- menu profile quick info -->
+          <div class="profile clearfix">
+            <div class="profile_pic">
+              <img src="images/distriSol.png" alt="" class="img-circle profile_img">
+            </div>
+            <div class="profile_info">
+              <span>Bienvenido,</span>
+              <h2>Tihamer Aldana</h2>
+            </div>
+          </div>
+          <!-- /menu profile quick info -->
+
+          <br />
+
+          <!-- sidebar menu -->
+          <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+            <div class="menu_section">
+              <h3>Usuario Domiciliario</h3>
+              <ul class="nav side-menu">
+                <li><a href="index4.html"><i class="fa fa-home "></i> Home </a>
+                </li>
+                <li><a id="sincro"><i class="fa fa-refresh"></i> Sincronizar Datos </a></li>
+                <li><a href="recibosEntregar.html"><i class="fa fa-file-text"></i> Recibos </a>
+                </li>
+                <li><a href="calendarioD.html"><i class="fa fa-calendar"></i> Calendario </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+          <!-- /sidebar menu -->
+
+          <!-- /menu footer buttons -->
+          <div class="sidebar-footer hidden-small">
+            <a data-toggle="tooltip" data-placement="top" title="Settings">
+              <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+            </a>
+
+
+            <a data-toggle="tooltip" data-placement="top" title="Logout" href="index.html">
+              <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+            </a>
+          </div>
+          <!-- /menu footer buttons -->
+        </div>
+      </div>
+
+      <!-- top navigation -->
+      <div class="top_nav">
+        <div class="nav_menu">
+
+          <div class="nav toggle">
+            <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+          </div>
+          <nav class="nav navbar-nav">
+            <ul class=" navbar-right">
+              <li class="nav-item dropdown open" style="padding-left: 15px;">
+                <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown"
+                  data-toggle="dropdown" aria-expanded="false">
+                  <img src="images/iconos/070-man.png" alt="">Tihamer Aldana
+                </a>
+                <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="javascript:;"> Profile</a>
+                  <a class="dropdown-item" href="javascript:;">
+                    <span>Settings</span>
+                  </a>
+                  <a class="dropdown-item" href="javascript:;">Help</a>
+                  <a class="dropdown-item" href="index.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                </div>
+              </li>
+
+              <li role="presentation" class="nav-item dropdown open">
+                <a href="javascript:;" class="dropdown-toggle info-number" id="navbarDropdown1" data-toggle="dropdown"
+                  aria-expanded="false">
+                  <i class="fa fa-envelope-o"></i>
+                  <span class="badge bg-green">6</span>
+                </a>
+                <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
+                  <li class="nav-item">
+                    <a class="dropdown-item">
+                      <span class="image"><img src="images/iconos/021-man.png" alt="Profile Image" /></span>
+                      <span>
+                        <span>Deyvid Prada</span>
+                        <span class="time">Hace 15 minutos</span>
+                      </span>
+                      <span class="message">
+                        Por favor revisar los reenvios de el dia de ayer.
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item">
+                      <span class="image"><img src="images/iconos/076-man.png" alt="Profile Image" /></span>
+                      <span>
+                        <span>Miguel Vega</span>
+                        <span class="time">Hace 65 minutos</span>
+                      </span>
+                      <span class="message">
+                        Revisar el pedido de Cigarreria Diana, ya no va aresivir en la mañana sino en la tarde.
+                      </span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="dropdown-item">
+                      <span class="image"><img src="images/iconos/010-man.png" alt="Profile Image" /></span>
+                      <span>
+                        <span>Juan Gonzales</span>
+                        <span class="time">Hace 12 minutos</span>
+                      </span>
+                      <span class="message">
+                        Tenemos averías en gaseosa Pepsi 1.5L para que lo tengan presente.
+                      </span>
+                    </a>
+                  </li>
+                 
+                  <li class="nav-item">
+                    <div class="text-center">
+                      <a class="dropdown-item">
+                        <strong>See All Alerts</strong>
+                        <i class="fa fa-angle-right"></i>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+      </div>
+      <!-- /top navigation -->
+
+
+      <!-- page content -->
+      <div class="right_col" role="main">
+        <div class="">
+
+
+          <div class="clearfix"></div>
+
+          <div class="col-md-12 col-sm-12 ">
+            <div class="x_panel">
+              <div class="x_title">
+                <h2>Recibos <small>RUTA DÍA MARTES</small></h2>
+
+                <div class="clearfix"></div>
+              </div>
+              <div class="x_content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="card-box table-responsive">
+
+                      <table id="datatable-buttons" class="table table-striped table-bordered">
+                        <thead>
+                          <tr>
+                            <th># Recibo</th>
+                            <th>Nombre Establecimiento</th>
+                            <th>Cliente</th>
+                            <th>Dirección Georreferenciada</th>
+                            <th>Telefono de Cliente</th>
+                            <th>Estado</th>
+                            <th>Monto</th>
+                            <th>Opción</th>
+                          </tr>
+                        </thead>
+
+
+                        <tbody>
+                          <tr>
+                            <td>121000040</td>
+                            <td>CIGARRERIA VICENTE</td>
+                            <td>VICENTE</td>
+                            <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank" class="glyphicon glyphicon-map-marker"></a>CR 80G 44 05 SUR</td>
+                            <td><a href="tel:+573505377054" target="blank" class="glyphicon glyphicon-phone"></a>3107579202</td>
+                            <td>Entregado</td>
+                            <td>$320,800</td>
+                            <td class=" last"><a href="Recibo.html">Ver</a></td>
+                          </tr>
+                          <tr>
+                            <td>121000039</td>
+                            <td>CIGARRERIA DIANA</td>
+                            <td>DIANA</td>
+                            <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank" class="glyphicon glyphicon-map-marker"></a>CR 80I # 45A 03 SUR</td>
+                            <td><a href="tel:+573505377054" target="blank" class="glyphicon glyphicon-phone"></a>3208645874</td>
+                            <td>No Entregado</td>
+                            <td>$248.600</td>
+                            <td class=" last"><a href="Recibo.html">Ver</a></td>
+                          </tr>
+                          <tr>
+                            <td>121000038</td>
+                            <td>RESTAURANTE ASOCIACION DE ABUELOS</td>
+                            <td>MIGUEL</td>
+                            <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank" class="glyphicon glyphicon-map-marker"></a> CR 81C BIS A #43 24</td>
+                            <td><a href="tel:+573505377054" target="blank" class="glyphicon glyphicon-phone"></a>3124905448</td>
+                            <td>Entregado</td>
+                            <td>$320,800</td>
+                            <td class=" last"><a href="Recibo.html">Ver</a></td>
+                          </tr>
+                          <tr>
+                            <td>121000037</td>
+                            <td>SOPITAS EXPRESS </td>
+                            <td>AIDA</td>
+                            <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank" class="glyphicon glyphicon-map-marker"></a>CL 45 BIS # 80 17</td>
+                            <td><a href="tel:+573505377054" target="blank" class="glyphicon glyphicon-phone"></a>3214242572</td>
+                            <td>No Entregado</td>
+                            <td>$320,800</td>
+                            <td class=" last"><a href="Recibo.html">Ver</a></td>
+                          </tr>
+                          <tr>
+                            <td>121000036</td>
+                            <td>BON CAFÉ</td>
+                            <td>NANCY</td>
+                            <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank" class="glyphicon glyphicon-map-marker"></a>CR 78J # 47B 08</td>
+                            <td><a href="tel:+573505377054" target="blank" class="glyphicon glyphicon-phone"></a>3118102240</td>
+                            <td>Entregado</td>
+                            <td>$320,800</td>
+                            <td class=" last"><a href="Recibo.html">Ver</a></td>
+                          </tr>
+                          <td>121000035</td>
+                            <td>TIENDA HERNAN</td>
+                            <td>HERNAN</td>
+                            <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank" class="glyphicon glyphicon-map-marker"></a>CLL 51 SUR 79B 16  PORTERIA 3</td>
+                            <td><a href="tel:+573505377054" target="blank" class="glyphicon glyphicon-phone"></a>3665554433</td>
+                            <td>No Entregado</td>
+                            <td>$320,800</td>
+                            <td class=" last"><a href="Recibo.html">Ver</a></td>
+                          </tr>
+                          <td>121000034</td>
+                            <td>RESTAURANTE THOMAS</td>
+                            <td>THOMAS</td>
+                            <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank" class="glyphicon glyphicon-map-marker"></a>CR 81C BIS A #43 24</td>
+                            <td><a href="tel:+573505377054" target="blank" class="glyphicon glyphicon-phone"></a>3124905448</td>
+                            <td>Entregado</td>
+                            <td>$320,800</td>
+                            <td class=" last"><a href="Recibo.html">Ver</a></td>
+                          </tr>
+                          <tr>
+                            <td>121000033</td>
+                            <td>MERCA EXPRESS </td>
+                            <td>FULANO</td>
+                            <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank" class="glyphicon glyphicon-map-marker"></a>CL 45 BIS # 80 17</td>
+                            <td><a href="tel:+573505377054" target="blank" class="glyphicon glyphicon-phone"></a>3214242572</td>
+                            <td>No Entregado</td>
+                            <td>$320,800</td>
+                            <td class=" last"><a href="Recibo.html">Ver</a></td>
+                          </tr>
+                          <tr>
+                            <td>121000032</td>
+                            <td>CAFÉ OF GUTY</td>
+                            <td>GUSTAVO</td>
+                            <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank" class="glyphicon glyphicon-map-marker"></a>CR 78J # 47B 08</td>
+                            <td><a href="tel:+573505377054" target="blank" class="glyphicon glyphicon-phone"></a>3118102240</td>
+                            <td>Entregado</td>
+                            <td>$320,800</td>
+                            <td class=" last"><a href="Recibo.html">Ver</a></td>
+                          </tr>
+                          <td>121000031</td>
+                            <td>TIENDE EL EDÉN</td>
+                            <td>MARCELINO</td>
+                            <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank" class="glyphicon glyphicon-map-marker"></a>CLL 51 SUR 79B 16  PORTERIA 3</td>
+                            <td><a href="tel:+573505377054" target="blank" class="glyphicon glyphicon-phone"></a>3665554433</td>
+                            <td>No Entregado</td>
+                            <td>$320,800</td>
+                            <td class=" last"><a href="Recibo.html">Ver</a></td>
+                          </tr>
+                          <td>121000030</td>
+                          <td>RESTAURANTE MAPACHE</td>
+                          <td>MARIO</td>
+                          <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank" class="glyphicon glyphicon-map-marker" ></a>CR 81C BIS A #43 24</td>
+                          <td><a href="tel:+573505377054" target="blank" class="glyphicon glyphicon-phone"></a>3124905448</td>
+                          <td>Entregado</td>
+                          <td>$320,800</td>
+                          <td class=" last"><a href="Recibo.html">Ver</a></td>
+                        </tr>
+                        <tr>
+                          <td>121000029</td>
+                          <td>MERCA EXPRESSITO </td>
+                          <td>MENGANO</td>
+                          <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank" class="glyphicon glyphicon-map-marker"></a>CL 45 BIS # 80 17</td>
+                          <td><a href="tel:+573505377054" target="blank" class="glyphicon glyphicon-phone"></a>3214242572</td>
+                          <td>No Entregado</td>
+                          <td>$320,800</td>
+                          <td class=" last"><a href="Recibo.html">Ver</a></td>
+                        </tr>
+                        <tr>
+                          <td>121000028</td>
+                          <td>SALSAMENTARIA PANCRACIA</td>
+                          <td>PANCRACIA</td>
+                          <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank" class="glyphicon glyphicon-map-marker"></a>CR 78J # 47B 08</td>
+                          <td><a href="tel:+573505377054" target="blank" class="glyphicon glyphicon-phone"></a>3118102240</td>
+                          <td>Entregado</td>
+                          <td>$320,800</td>
+                          <td class=" last"><a href="Recibo.html">Ver</a></td>
+                        </tr>
+                        <td>121000027</td>
+                          <td>CAFÉ BAR RED</td>
+                          <td>REDMUNDO</td>
+                          <td><a href="https://goo.gl/maps/wjFYtqyVYMCdpSF18" target="blank" class="glyphicon glyphicon-map-marker"></a>CLL 51 SUR 79B 16  PORTERIA 3</td>
+                          <td><a href="tel:+573505377054" target="blank" class="glyphicon glyphicon-phone"></a>3665554433</td>
+                          <td>No Entregado</td>
+                          <td>$320,800</td>
+                          <td class=" last"><a href="Recibo.html">Ver</a></td>
+                        </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /page content -->
+
+      <!-- footer content -->
+      <footer>
+        <div class="pull-right">
+          Powered by ServEasy.TJ
+        </div>
+        <div class="clearfix"></div>
+      </footer>
+      <!-- /footer content -->
+    </div>
+  </div>
+<!-- bootstrap-->
+<script src="build/js/jquery-3.3.1.min.js"></script>
+<script src="build/js/popper.min.js"></script>
+<!-- alertas-->
+<script src="build/js/sweetalert2.all.min.js"></script>
+<script src="build/js/alertas.js"></script>
+<script src="build/js/validarEinicio.js"></script>
+  <!-- jQuery -->
+  <script src="vendors/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- FastClick -->
+  <script src="vendors/fastclick/lib/fastclick.js"></script>
+  <!-- NProgress -->
+  <script src="vendors/nprogress/nprogress.js"></script>
+  <!-- iCheck -->
+  <script src="vendors/iCheck/icheck.min.js"></script>
+  <!-- Datatables -->
+  <script src="vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+  <script src="vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+  <script src="vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+  <script src="vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+  <script src="vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+  <script src="vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+  <script src="vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+  <script src="vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+  <script src="vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+  <script src="vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+  <script src="vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+  <script src="vendors/jszip/dist/jszip.min.js"></script>
+  <script src="vendors/pdfmake/build/pdfmake.min.js"></script>
+  <script src="vendors/pdfmake/build/vfs_fonts.js"></script>
+
+  <!-- Custom Theme Scripts -->
+  <script src="build/js/custom.min.js"></script>
+
+</body>
+
+</html>

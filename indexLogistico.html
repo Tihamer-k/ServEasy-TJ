@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/favicon.ico" type="image/ico" />
+
+    <title>Distri Sol | Gestión Logítica </title>
+
+    <!-- Bootstrap -->
+    <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+	
+    <!-- bootstrap-progressbar -->
+    <link href="vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
+    <!-- bootstrap-daterangepicker -->
+    <link href="vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="build/css/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title">
+              <a href="index.html" class="site_title">  <span><h2 class="logoColor2">  (</h1><h2 class="logoColor">Serv</h2><h2 class="logoColor2">Easy.TJ)</h2><h2></h2></span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="images/distriSol.png" alt="" class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Bienvenido,</span>
+                <h2>Juan Gonzalez</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>Usuario Op. Logístico</h3>
+                <ul class="nav side-menu">
+                  <li> <a href="indexLogistico.html"><class class="fa fa-edit"></class> Productos </a>
+                    <ul class="nav child_menu">
+                      
+                      
+                    </ul>
+                  </li>
+                  <li><a href="calendar.html"><i class="fa fa-calendar"></i> Calendario </span></a>                  </li>
+                  <li><a href="OrdenesPedido.html"><i class="fa fa-desktop"></i> Ordenes de pedido </span></a>
+                    <ul class="nav child_menu">
+              </div>
+
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              
+              
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+              <nav class="nav navbar-nav">
+              <ul class=" navbar-right">
+                <li class="nav-item dropdown open" style="padding-left: 15px;">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" aria-haspopup="true" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                    <img src="images/iconos/070-man.png" alt="">Juan Gonzalez
+                  </a>
+                  <div class="dropdown-menu dropdown-usermenu pull-right" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item"  href="javascript:;"> Profile</a>
+                      <a class="dropdown-item"  href="javascript:;">
+                        <span class="badge bg-red pull-right">50%</span>
+                        <span>Settings</span>
+                      </a>
+                  <a class="dropdown-item"  href="javascript:;">Help</a>
+                    <a class="dropdown-item"  href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                  </div>
+                </li>
+
+                <li role="presentation" class="nav-item dropdown open">
+                  <a href="javascript:;" class="dropdown-toggle info-number" id="navbarDropdown1" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="badge bg-green">2</span>
+                  </a>
+                  <ul class="dropdown-menu list-unstyled msg_list" role="menu" aria-labelledby="navbarDropdown1">
+                    <li class="nav-item">
+                      <a class="dropdown-item">
+                        <span class="fa fa-share-square-o"> </span>
+                        <span>
+                          <span>Adminitrador</span>
+                          <span class="time">hace 3 mins </span>
+                        </span>
+                        <span class="message">
+                          Ah solicitado el registro de nuevos productos...
+                        </span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="dropdown-item">
+                        <span class="fa fa-check"> </span>
+                        <span>
+                          <span>Administrador</span>
+                          <span class="time">hace 5 mins </span>
+                        </span>
+                        <span class="message">
+                          Ah visto la sugerencia de pedidos a reabastecer
+                        </span>
+                      </a>
+                    </li>
+                                      </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+        
+<!-- page content -->
+
+<div class="right_col" role="main">
+  <div class="x_panel">
+    <div class="page-title">
+      <div class="title_left">
+        <h3> INVENTARIO </h3>
+        
+      </div>
+
+      <div class="title_right">
+        <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+              <button class="btn btn-secondary" type="button">Buscar</button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <div class="row">
+      <div class="col-md-12 col-sm-12 ">
+        <div class="x_panel">
+          <div class="x_title">
+            <h2>Stock de productos<small></small></h2>
+            <ul class="nav navbar-right panel_toolbox">
+              <li><a class="collapse-link"><i ></i></a>
+              </li>
+              <li class="dropdown">
+            </ul>
+            <div class="clearfix"></div>
+            
+          </div>
+          <div class="x_content">
+              <div class="row">
+                  <div class="col-sm-12">
+                    <div class="card-box table-responsive">
+            <p class="text-muted font-13 m-b-30">
+                   Exportar información
+            </p>
+            
+            <table  id="datatable-buttons" class="table tabe-stripeld table-bordered" style="width:100%" >
+              
+              
+              <thead>
+                <tr>
+                  <th>Código</th>
+                  <th>Nombre</th>
+                  <th>Contenido</th>
+                  <th>Precio </th>
+                  <th>Cantidad</th>
+                  
+                  
+                </tr>
+              </thead>
+
+
+              <tbody>
+                <tr>
+                  <td>00003</td>
+                  <td>Agua brisa</td>
+                  <td>600 ml</td>
+                  <td>$1,370</td>
+                  <td>280</td>
+                  
+                  
+                </tr>
+                <tr>
+                  <td>00002</td>
+                  <td>Agua Brisa Bidon</td>
+                  <td>6 Lts</td>
+                  <td>$5,300</td>
+                  <td>122</td>
+                  
+                  
+                </tr>
+                <tr>
+                  <td>00001</td>
+                  <td>Agua Mananti</td>
+                  <td>600 ml</td>
+                  <td>$2,900</td>
+                  <td>180</td>
+                  
+                </tr>
+                <tr>
+                  <td>00010</td>
+                  <td>Agua Cielo</td>
+                  <td>600 ml</td>
+                  <td>$750</td>
+                  <td>352</td>
+                  
+                </tr>
+                <tr>
+                  <td>00020</td>
+                  <td>Agua H2O</td>
+                  <td>1.5 Lts</td>
+                  <td>$1,430</td>
+                  <td>121</td>
+                  
+                </tr>
+                <tr>
+                  <td>00018</td>
+                  <td>Coca Cola</td>
+                  <td>1.5 Lts</td>
+                  <td>$3,100</td>
+                  <td>74</td>
+                  
+                </tr>
+                <tr>
+                  <td>00015</td>
+                  <td>Coca Cola Zero</td>
+                  <td>1.5 Lts</td>
+                  <td>$3,100</td>
+                  <td>58</td>
+                  
+                </tr>
+                <tr>
+                  <td>00004</td>
+                  <td>Kola Roman</td>
+                  <td>400 ml</td>
+                  <td>$1,375</td>
+                  <td>96</td>
+                  
+                </tr>
+                <tr>
+                  <td>00012</td>
+                  <td>Sprite</td>
+                  <td>1.5 Lts</td>
+                  <td>$2,333</td>
+                  <td>73</td>
+                  
+                </tr>
+                <tr>
+                  <td>00019</td>
+                  <td>Quatro</td>
+                  <td>1.5 Lts</td>
+                  <td>$2,333</td>
+                  <td>52</td>
+                  
+                </tr>
+                <tr>
+                  <td>00008</td>
+                  <td>Manzana Postobon</td>
+                  <td>1.5 Lts</td>
+                  <td>$2,566</td>
+                  <td>255</td>
+                  
+                </tr>
+                <tr>
+                  <td>00013</td>
+                  <td>Colombiana POSTOBON</td>
+                  <td>1.5 Lts</td>
+                  <td>$2,566</td>
+                  <td>230</td>
+                  
+                </tr>
+                <tr>
+                  <td>00014</td>
+                  <td>Manzana POSTOBON</td>
+                  <td>400 ml</td>
+                  <td>$1,025</td>
+                  <td>148</td>
+                  
+                </tr>
+                <tr>
+                  <td>00017</td>
+                  <td>Colombiana POSTOBON</td>
+                  <td>400 ml</td>
+                  <td>$1,025</td>
+                  <td>131</td>
+                  
+                </tr>
+                <tr>
+                  <td>00006</td>
+                  <td>CANADA DRY</td>
+                  <td>1.5 Lts</td>
+                  <td>$2,566</td>
+                  <td>90</td>
+                  
+                </tr>
+                <tr>
+                  <td>00016</td>
+                  <td>Pepsi POSTOBON</td>
+                  <td>1.5 Lts</td>
+                  <td>$2,566</td>
+                  <td>110</td>
+                </tr>
+                <tr>
+                  <td>00009</td>
+                  <td>Uva POSTOBON</td>
+                  <td>400 ml</td>
+                  <td>$1,025</td>
+                  <td>144</td>
+                </tr>
+                <tr>
+                  <td>00011</td>
+                  <td>Big Cola</td>
+                  <td>400 ml</td>
+                  <td>$883</td>
+                  <td>164</td>
+                </tr>
+                <tr>
+                  <td>00007</td>
+                  <td>Del Valle Frutal</td>
+                  <td>350 ml</td>
+                  <td>$1,250</td>
+                  <td>163</td>
+                  
+                </tr>
+                <tr>
+                  <td>00035</td>
+                  <td>Del Valle Fresh Citrus</td>
+                  <td>1.5 Lts</td>
+                  <td>$2,083</td>
+                  <td>75</td>
+                </tr>
+                <tr>
+                  <td>00029</td>
+                  <td>Del Valle Fresh Mandarina</td>
+                  <td>1.5 Lts</td>
+                  <td>$2,083</td>
+                  <td>68</td>
+                </tr>
+                <tr>
+                  <td>00021</td>
+                  <td>Cifrut maracuya</td>
+                  <td>1.75ml</td>
+                  <td>$1,687</td>
+                  <td>82</td>
+                  
+                </tr>
+                <tr>
+                  <td>00030</td>
+                  <td>Cifrut mora</td>
+                  <td>1.75 ml</td>
+                  <td>$1,687</td>
+                  <td>70</td>
+                </tr>
+                <tr>
+                  <td>00026</td>
+                  <td>Pony Malta</td>
+                  <td>2 Lts</td>
+                  <td>$3,333</td>
+                  <td>95</td>
+                  
+                </tr>
+                <tr>
+                  <td>00028</td>
+                  <td>Pony Malta</td>
+                  <td>1.5 Lts</td>
+                  <td>$3,166</td>
+                  <td>130</td>
+                </tr>
+                <tr>
+                  <td>00033</td>
+                  <td>Hit caja piñanaranja</td>
+                  <td>1 Lts</td>
+                  <td>$2,566</td>
+                  <td>111</td>
+                  
+                </tr>
+                <tr>
+                  <td>00027</td>
+                  <td>fuze tea Durazno</td>
+                  <td>1.2 Lts</td>
+                  <td>$3,100</td>
+                  <td>83</td>
+                  
+                </tr>
+                <tr>
+                  <td>00025</td>
+                  <td>fuze tea Limon</td>
+                  <td>1.2 Lts</td>
+                  <td>$3,100</td>
+                  <td>78</td>
+                </tr>
+                <tr>
+                  <td>00024</td>
+                  <td>Del Valle Fresh Mora</td>
+                  <td>1.5 Lts</td>
+                  <td>$2,083</td>
+                  <td>68</td>
+                </tr>
+                <tr>
+                  <td>00034</td>
+                  <td>Natumalta</td>
+                  <td>1.5 Lts</td>
+                  <td>$3,155</td>
+                  <td>60</td>
+                  
+                </tr>
+                <tr>
+                  <td>00023</td>
+                  <td>Nectar Frutto</td>
+                  <td>200 ml</td>
+                  <td>$959</td>
+                  <td>59</td>
+                  
+                </tr>
+                <tr>
+                  <td>00022</td>
+                  <td>Nectar manzana Alpina</td>
+                  <td>1 Lts</td>
+                  <td>$4,300</td>
+                  <td>51</td>
+                </tr>
+                <tr>
+                  <td>00031</td>
+                  <td>Nectar durazno Alpina</td>
+                  <td>1 Lts</td>
+                  <td>$4,300</td>
+                  <td>51</td>
+                </tr>
+                <tr>
+                  <td>00005</td>
+                  <td>Nectar pera Alpina</td>
+                  <td>1 Lts</td>
+                  <td>$4,300</td>
+                  <td>51</td>
+                </tr>
+                <tr>
+                  <td>00032</td>
+                  <td>Pony Malta</td>
+                  <td>1 Lts</td>
+                  <td>$1,890</td>
+                  <td>130</td>
+                </tr>
+                
+              </tbody>
+            </table>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <table  id="datatable-buttons" class="table tabe-stripeld table-bordered" style="width:100%" >
+      <div class="x_panel">
+        <div class="x_title">
+          <h2>Registro de productos</h2>
+          <ul class="nav navbar-right panel_toolbox">
+            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+        <div class="x_content">
+          <br />
+          <form class="form-horizontal form-label-left"></form>
+    
+            <div class="form-group row">
+              <label class="control-label col-md-3 col-sm-3 col-xs-3"> Código </label>
+              <div class="col-md-9 col-sm-9 col-xs-9">
+                <input type="text" class="form-control" data-inputmask="'mask': '99/99/9999'">
+                <span  aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="control-label col-md-3 col-sm-3 col-xs-3"> Nombre</label>
+              <div class="col-md-9 col-sm-9 col-xs-9">
+                <input type="text" class="form-control" data-inputmask="'mask' : '(999) 999-9999'">
+                <span  aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="control-label col-md-3 col-sm-3 col-xs-3"> Contenido</label>
+              <div class="col-md-9 col-sm-9 col-xs-9">
+                <input type="text" class="form-control" data-inputmask="'mask': '99-999999'">
+                <span c aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="control-label col-md-3 col-sm-3 col-xs-3"> Precio</label>
+              <div class="col-md-9 col-sm-9 col-xs-9">
+                <input type="text" class="form-control" data-inputmask="'mask' : '****-****-****-****-****-***'">
+                <span  aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="control-label col-md-3 col-sm-3 col-xs-3"> Cantidad</label>
+              <div class="col-md-9 col-sm-9 col-xs-9">
+                <input type="text" class="form-control" data-inputmask="'mask' : '99-99999999'">
+                <span  aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="control-label col-md-3 col-sm-3 col-xs-3">Fecha de vencimiento</label>
+              <div class="col-md-9 col-sm-9 col-xs-9">
+                <input type="text" class="form-control" data-inputmask="'mask' : '9999-9999-9999-9999'">
+                <span  aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="ln_solid"></div>
+      <!-- /page content -->
+
+
+      <!-- form input mask -->
+
+
+      <div class="form-group row">
+        <div class="col-md-9 offset-md-3">
+          <button type="submit" class="btn btn-primary">Cancel</button>
+          <button type="submit" class="btn btn-success">Submit</button>
+        </div>
+      </div>
+
+         </form>
+      </div>
+       </div>
+       </div>
+ <!-- footer content -->
+ <footer>
+  <div class="pull-right">
+    ServEasy TJ
+  </div>
+  <div class="clearfix"></div>
+</footer>
+<!-- /footer content -->
+      
+  </div>
+</div>
+           
+      
+
+        <!-- /form input mask -->
+    
+
+
+  
+    <!-- jQuery -->
+   <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- Datatables -->
+   <script src="../vendors/datatables.net/js/jquery.dataTables.min.js"></script>
+   <script src="../vendors/datatables.net-bs/js/dataTables.bootstrap.min.js"></script>
+   <script src="../vendors/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+   <script src="../vendors/datatables.net-buttons-bs/js/buttons.bootstrap.min.js"></script>
+   <script src="../vendors/datatables.net-buttons/js/buttons.flash.min.js"></script>
+   <script src="../vendors/datatables.net-buttons/js/buttons.html5.min.js"></script>
+   <script src="../vendors/datatables.net-buttons/js/buttons.print.min.js"></script>
+   <script src="../vendors/datatables.net-fixedheader/js/dataTables.fixedHeader.min.js"></script>
+   <script src="../vendors/datatables.net-keytable/js/dataTables.keyTable.min.js"></script>
+   <script src="../vendors/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+   <script src="../vendors/datatables.net-responsive-bs/js/responsive.bootstrap.js"></script>
+   <script src="../vendors/datatables.net-scroller/js/dataTables.scroller.min.js"></script>
+   <script src="../vendors/jszip/dist/jszip.min.js"></script>
+   <script src="../vendors/pdfmake/build/pdfmake.min.js"></script>
+   <script src="../vendors/pdfmake/build/vfs_fonts.js"></script> 
+
+   <!-- Custom Theme Scripts -->
+
+   <script src="../build/js/custom.min.js"></script>
+
+ </body>
+</html>
